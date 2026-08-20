@@ -1,0 +1,1444 @@
+[
+  {
+    "recordId": "mayo-hla-b27",
+    "sourceId": "mayo-hla-b27:source:1",
+    "sourceUrl": "https://www.mayocliniclabs.com/test-catalog/overview/9648",
+    "sourceLabel": "Mayo HLA-B27 overview",
+    "sourceType": "test-page",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "labcorp-hla-b27",
+    "sourceId": "labcorp-hla-b27:source:1",
+    "sourceUrl": "https://www.labcorp.com/tests/006924/hla-b-27-disease-association",
+    "sourceLabel": "Labcorp HLA-B27 disease association",
+    "sourceType": "test-page",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "quest-hla-b27",
+    "sourceId": "quest-hla-b27:source:1",
+    "sourceUrl": "https://www.questdiagnostics.com/content/dam/corporate/restricted/documents/hcp/q1-sprint--ana/lab-director/TL12703_10599-SprintTestMenu_2-12-24_v4.pdf",
+    "sourceLabel": "Quest autoimmune testing menu PDF",
+    "sourceType": "pdf",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "arup-bcr-abl1-p210",
+    "sourceId": "arup-bcr-abl1-p210:source:1",
+    "sourceUrl": "https://ltd.aruplab.com/Tests/Pub/3005840",
+    "sourceLabel": "ARUP BCR::ABL1 p210 quantitative overview",
+    "sourceType": "test-page",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "arup-bcr-abl1-p210",
+    "sourceId": "arup-bcr-abl1-p210:source:2",
+    "sourceUrl": "https://ltd.aruplab.com/api/ltd/pdf/143",
+    "sourceLabel": "ARUP BCR-ABL1 qualitative and quantitative testing PDF",
+    "sourceType": "pdf",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "mayo-bcr-abl1-p210",
+    "sourceId": "mayo-bcr-abl1-p210:source:1",
+    "sourceUrl": "https://www.mayocliniclabs.com/test-catalog/overview/89007",
+    "sourceLabel": "Mayo BCRAB overview",
+    "sourceType": "test-page",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "mayo-bcr-abl1-p210",
+    "sourceId": "mayo-bcr-abl1-p210:source:2",
+    "sourceUrl": "https://www.mayocliniclabs.com/it-mmfiles/BCR-ABL1_Ordering_Guide_For_Blood_and_Bone_Marrow.pdf",
+    "sourceLabel": "Mayo BCR/ABL1 ordering guide",
+    "sourceType": "pdf",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "arup-factor-v-leiden",
+    "sourceId": "arup-factor-v-leiden:source:1",
+    "sourceUrl": "https://ltd.aruplab.com/Tests/Pub/0097720",
+    "sourceLabel": "ARUP Factor V Leiden overview",
+    "sourceType": "test-page",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "mayo-factor-v-leiden",
+    "sourceId": "mayo-factor-v-leiden:source:1",
+    "sourceUrl": "https://www.mayocliniclabs.com/test-catalog/overview/81419",
+    "sourceLabel": "Mayo Factor V Leiden overview",
+    "sourceType": "test-page",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "mayo-tpmt-nudt15",
+    "sourceId": "mayo-tpmt-nudt15:source:1",
+    "sourceUrl": "https://www.mayocliniclabs.com/test-catalog/overview/610062",
+    "sourceLabel": "Mayo TPNUQ overview",
+    "sourceType": "test-page",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "mayo-tpmt-nudt15",
+    "sourceId": "mayo-tpmt-nudt15:source:2",
+    "sourceUrl": "https://www.mayocliniclabs.com/~/media/it-mmfiles/special-instructions/TPMT-Testing-Treatment-Inflammatory-Bowel-Disease-Algorithm.pdf",
+    "sourceLabel": "Mayo thiopurine testing algorithm PDF",
+    "sourceType": "pdf",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "quest-tpmt-genotype",
+    "sourceId": "quest-tpmt-genotype:source:1",
+    "sourceUrl": "https://intellitestmanager.questdiagnostics.com/home/output/256712",
+    "sourceLabel": "Quest IntelliTest Manager TPMT genotype",
+    "sourceType": "reference",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "quest-tpmt-genotype",
+    "sourceId": "quest-tpmt-genotype:source:2",
+    "sourceUrl": "https://www.questdiagnostics.com/content/dam/corporate/restricted/documents/hcp/q1-sprint--ana/lab-director/TL12703_10599-SprintTestMenu_2-12-24_v4.pdf",
+    "sourceLabel": "Quest autoimmune and gastroenterology test menu PDF",
+    "sourceType": "pdf",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "labcorp-egfr-mutation",
+    "sourceId": "labcorp-egfr-mutation:source:1",
+    "sourceUrl": "https://oncology.labcorp.com/tests/489360/egfr-mutation-analysis",
+    "sourceLabel": "Labcorp EGFR mutation analysis",
+    "sourceType": "test-page",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "labcorp-hiv1-rna",
+    "sourceId": "labcorp-hiv1-rna:source:1",
+    "sourceUrl": "https://www.labcorp.com/tests/550420",
+    "sourceLabel": "Labcorp HIV-1 quantitative PCR",
+    "sourceType": "test-page",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "labcorp-hiv1-rna",
+    "sourceId": "labcorp-hiv1-rna:source:2",
+    "sourceUrl": "https://www.labcorp.com/assets/5806",
+    "sourceLabel": "Labcorp HIV specimen collection guide",
+    "sourceType": "reference",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "quest-hiv1-rna",
+    "sourceId": "quest-hiv1-rna:source:1",
+    "sourceUrl": "https://www.questdiagnostics.com/content/dam/corporate/restricted/documents/hcp/about-our-tests/SB6659_HIV-Portfolio-Overview.PDF",
+    "sourceLabel": "Quest HIV portfolio overview PDF",
+    "sourceType": "pdf",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "quest-hiv1-rna",
+    "sourceId": "quest-hiv1-rna:source:2",
+    "sourceUrl": "https://www.questdiagnostics.com/healthcare-professionals/about-our-tests/infectious-diseases/hiv",
+    "sourceLabel": "Quest HIV testing overview",
+    "sourceType": "overview",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "labcorp-hfe",
+    "sourceId": "labcorp-hfe:source:1",
+    "sourceUrl": "https://www.labcorp.com/tests/511345/hereditary-hemochromatosis-dna-analysis",
+    "sourceLabel": "Labcorp hereditary hemochromatosis DNA analysis",
+    "sourceType": "test-page",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "quest-hfe",
+    "sourceId": "quest-hfe:source:1",
+    "sourceUrl": "https://www.questdiagnostics.com/healthcare-professionals/clinical-education-center/faq/hemochromatos",
+    "sourceLabel": "Quest hereditary hemochromatosis FAQ",
+    "sourceType": "faq",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "quest-hfe",
+    "sourceId": "quest-hfe:source:2",
+    "sourceUrl": "https://www.questdiagnostics.com/content/dam/corporate/restricted/documents/mlcp/mlcp/jk-ngs/jk-ngs---mlcp---l35000---molecular-pathology-hemochromatosis/JK-NGS---MLCP---L35000---Molecular-Hemochromatosis.pdf",
+    "sourceLabel": "Quest Medicare LCD molecular hemochromatosis PDF",
+    "sourceType": "pdf",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "arup-bcr-abl1-resistance",
+    "sourceId": "arup-bcr-abl1-resistance:source:1",
+    "sourceUrl": "https://ltd.aruplab.com/Tests/Pub/2008420",
+    "sourceLabel": "ARUP BCR-ABL1 resistance NGS overview",
+    "sourceType": "test-page",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "mayo-bcr-abl1-resistance",
+    "sourceId": "mayo-bcr-abl1-resistance:source:1",
+    "sourceUrl": "https://www.mayocliniclabs.com/test-catalog/Overview/89609",
+    "sourceLabel": "Mayo BAKDM overview",
+    "sourceType": "test-page",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "recordId": "mayo-bcr-abl1-resistance",
+    "sourceId": "mayo-bcr-abl1-resistance:source:2",
+    "sourceUrl": "https://www.mayocliniclabs.com/it-mmfiles/BCR-ABL1_Ordering_Guide_For_Blood_and_Bone_Marrow.pdf",
+    "sourceLabel": "Mayo BCR/ABL1 ordering guide",
+    "sourceType": "pdf",
+    "sourceVerifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10106",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10106"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10107",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10107"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10108",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10108"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10110",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10110"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10114",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10114"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10116",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10116"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10119",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10119"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10122",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10122"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10123",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10123"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10124",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10124"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10126",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10126"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10127",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10127"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10129",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10129"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10130",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10130"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10131",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10131"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10132",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10132"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10133",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10133"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10135",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10135"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10136",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10136"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10137",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10137"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10138",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10138"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10139",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10139"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10140",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10140"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10141",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10141"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10142",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10142"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10143",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10143"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10144",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10144"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10145",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10145"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10147",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10147"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10148",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10148"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10149",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10149"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10150",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10150"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10151",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10151"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10152",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10152"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10153",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10153"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10155",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10155"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10159",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10159"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10160",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10160"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10162",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10162"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10166",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10166"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10167",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10167"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10168",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10168"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10172",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10172"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10179",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10179"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10181",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10181"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10186",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10186"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10189",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10189"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10191",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10191"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10197",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10197"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10198",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10198"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10200",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10200"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10201",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10201"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10202",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10202"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10203",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10203"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10205",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10205"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10206",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10206"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10207",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10207"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10209",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10209"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10210",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10210"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10212",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10212"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10213",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10213"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10214",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10214"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10215",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10215"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10216",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10216"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10217",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10217"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10218",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10218"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10220",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10220"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10222",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10222"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10223",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10223"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10225",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10225"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10234",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10234"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10235",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10235"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10237",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10237"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10238",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10238"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10239",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10239"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10240",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10240"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10241",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10241"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10242",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10242"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10244",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10244"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10245",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10245"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10246",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10246"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10248",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10248"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10249",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10249"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10250",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10250"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10251",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10251"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10252",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10252"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10254",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10254"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10255",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10255"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10259",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10259"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10263",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10263"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10264",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10264"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10272",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10272"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10274",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10274"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10275",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10275"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10278",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10278"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10280",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10280"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10282",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10282"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10283",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10283"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10286",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10286"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10290",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10290"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10292",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10292"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10293",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10293"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10297",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10297"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10300",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10300"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10302",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10302"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10304",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10304"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10305",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10305"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10307",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10307"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10309",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10309"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10311",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10311"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10312",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10312"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10313",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10313"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10314",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10314"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10315",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10315"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10316",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10316"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10324",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10324"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10335",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10335"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10336",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10336"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10337",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10337"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10338",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10338"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10339",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10339"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10341",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10341"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10342",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10342"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10343",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10343"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10345",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10345"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10347",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10347"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10349",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10349"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10351",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10351"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10352",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10352"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10354",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10354"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10356",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10356"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10358",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10358"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10359",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10359"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10360",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10360"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10365",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10365"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10374",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10374"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10375",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10375"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10376",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10376"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10377",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10377"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10378",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10378"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10391",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10391"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10392",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10392"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10393",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10393"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10394",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10394"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10395",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10395"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10396",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10396"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10397",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10397"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10399",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10399"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10400",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10400"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10401",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10401"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10402",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10402"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10403",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10403"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10404",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10404"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10405",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10405"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10406",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10406"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10409",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10409"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10418",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10418"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10419",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10419"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10420",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10420"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10421",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10421"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10422",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10422"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10424",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10424"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10426",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10426"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10430",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10430"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10457",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10457"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10458",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10458"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10459",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10459"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10460",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10460"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10471",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10471"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10472",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10472"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10474",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10474"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10475",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10475"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10478",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10478"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10480",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10480"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10482",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10482"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10487",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10487"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10488",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10488"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10491",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10491"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10493",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10493"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10494",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10494"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10497",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10497"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10499",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10499"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10501",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10501"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10505",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10505"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10512",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10512"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10513",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10513"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10514",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10514"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10515",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10515"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10516",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10516"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10517",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10517"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10521",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10521"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10525",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10525"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10526",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10526"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10527",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10527"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10532",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10532"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10533",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10533"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10534",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10534"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10535",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10535"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10540",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10540"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10541",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10541"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10549",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10549"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10550",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10550"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10551",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10551"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10557",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10557"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10558",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10558"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10559",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10559"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10560",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10560"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10562",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10562"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10563",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10563"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10565",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10565"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10567",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10567"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10568",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10568"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10575",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10575"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10576",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10576"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10577",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10577"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10581",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10581"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10582",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10582"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10583",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10583"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10593",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10593"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10598",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10598"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10599",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10599"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10600",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10600"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10601",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10601"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10602",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10602"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10603",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10603"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10604",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10604"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10605",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10605"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10606",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10606"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10607",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10607"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10608",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10608"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10611",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10611"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10612",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10612"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10613",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10613"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10614",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10614"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10615",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10615"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10619",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10619"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10620",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10620"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10621",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10621"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10622",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10622"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10623",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10623"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10624",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10624"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10625",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10625"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10626",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10626"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10627",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10627"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10628",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10628"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10629",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10629"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10631",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10631"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10635",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10635"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10637",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10637"
+  },
+  {
+    "sourceOfferingId": "cdc-infectious-diseases-test-directory:CDC-10638",
+    "sourceId": "cdc-infectious-diseases-test-directory",
+    "locator": "https://www.cdc.gov/laboratory/specimen-submission/detail.html?CDCTestCode=CDC-10638"
+  }
+]

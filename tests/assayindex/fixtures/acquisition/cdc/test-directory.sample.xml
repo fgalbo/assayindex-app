@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="QryTableMerge.xsd" generated="2026-08-03T10:06:35">
+  <QryTableMerge>
+    <CDCTestCode>CDC-10472</CDCTestCode>
+    <TestID>10472</TestID>
+    <LabID>17</LabID>
+    <UnitNumber>2</UnitNumber>
+    <Version>4.1</Version>
+    <TestOrderNamSort>Zika Virus Molecular Detection</TestOrderNamSort>
+    <TestOrderNam>Zika Virus Molecular Detection</TestOrderNam>
+    <TestOrderSynonym>Zika RT-PCR; ZIKV PCR; Zika RT-PCR</TestOrderSynonym>
+    <Method>Real-time reverse transcription PCR</Method>
+    <TurnAround>7 Days&lt;br&gt;Preliminary results may be available earlier.&amp;nbsp;</TurnAround>
+    <TurnAroundTime>7</TurnAroundTime>
+    <TurnAroundTimeMeasure>Days</TurnAroundTimeMeasure>
+    <AcceptableSampleForTesting>Serum&lt;br&gt;Urine</AcceptableSampleForTesting>
+    <MinimumVolume>0.5 mL</MinimumVolume>
+    <StorageAndPreservation>Refrigerate at 2&#x2013;8&#xB0;C.</StorageAndPreservation>
+    <Transport>Ship with cold packs.</Transport>
+    <ShippingInstructions>Category B packaging required.</ShippingInstructions>
+    <InterferencesLimitations>Negative results do not exclude infection.</InterferencesLimitations>
+    <AdditionalInfo>Call before sending an &amp;quot;urgent&amp;quot; specimen &amp;amp; document approval.</AdditionalInfo>
+    <TestOrderStatus>This Test Order is currently not accepting any specimens until further notice.</TestOrderStatus>
+    <Offline>1</Offline>
+    <CLIA>Y</CLIA>
+    <PriorApprovalRequired>1</PriorApprovalRequired>
+    <PerformedOnHuman>1</PerformedOnHuman>
+    <PerformedOnAnimal>0</PerformedOnAnimal>
+    <PerformedOnFoodEnvironmentalMedicalBiologics>0</PerformedOnFoodEnvironmentalMedicalBiologics>
+    <CDCPOCFirst1>Ada</CDCPOCFirst1>
+    <CDCPOCLast1>Lovelace</CDCPOCLast1>
+    <CDCPOCPhone1>404-555-0101</CDCPOCPhone1>
+    <CDCPOCemail1>ada@example.cdc.gov</CDCPOCemail1>
+    <CDCPOCFirst2>
+    </CDCPOCFirst2>
+    <CDCPOCLast2></CDCPOCLast2>
+    <CDCPOCPhone2></CDCPOCPhone2>
+    <CDCPOCemail2></CDCPOCemail2>
+    <CDCPOCFirst3></CDCPOCFirst3>
+    <CDCPOCLast3></CDCPOCLast3>
+    <CDCPOCPhone3></CDCPOCPhone3>
+    <CDCPOCemail3></CDCPOCemail3>
+    <CDCPOCFirst4></CDCPOCFirst4>
+    <CDCPOCLast4></CDCPOCLast4>
+    <CDCPOCPhone4></CDCPOCPhone4>
+    <CDCPOCemail4></CDCPOCemail4>
+    <PriorApprovalFirst1>Grace</PriorApprovalFirst1>
+    <PriorApprovalLast1>Hopper</PriorApprovalLast1>
+    <PriorApprovalPhone1>404-555-0102</PriorApprovalPhone1>
+    <PriorApprovalemail1>grace@example.cdc.gov</PriorApprovalemail1>
+    <PriorApprovalFirst2></PriorApprovalFirst2>
+    <PriorApprovalLast2></PriorApprovalLast2>
+    <PriorApprovalPhone2></PriorApprovalPhone2>
+    <PriorApprovalemail2></PriorApprovalemail2>
+  </QryTableMerge>
+  <QryTableMerge>
+    <CDCTestCode>CDC-10471</CDCTestCode>
+    <TestID>10471</TestID>
+    <LabID>11</LabID>
+    <UnitNumber>1</UnitNumber>
+    <Version>2.0</Version>
+    <TestOrderNamSort>Ebola Virus Disease Testing</TestOrderNamSort>
+    <TestOrderNam>Ebola Virus Disease Test</TestOrderNam>
+    <TestOrderSynonym>Ebola Virus Disease Test; EVD testing</TestOrderSynonym>
+    <Method>RT-PCR</Method>
+    <TurnAround>Contact CDC before submission.&#x0D;Timing varies.</TurnAround>
+    <TurnAroundTime></TurnAroundTime>
+    <TurnAroundTimeMeasure>N/A</TurnAroundTimeMeasure>
+    <AcceptableSampleForTesting>Whole blood</AcceptableSampleForTesting>
+    <MinimumVolume>N/A</MinimumVolume>
+    <StorageAndPreservation>Freeze.</StorageAndPreservation>
+    <Transport>Contact CDC.</Transport>
+    <ShippingInstructions>Follow special-permit instructions.</ShippingInstructions>
+    <InterferencesLimitations>N/A</InterferencesLimitations>
+    <AdditionalInfo>For professional public-health use.</AdditionalInfo>
+    <TestOrderStatus>This Test Order is currently accepting specimens.</TestOrderStatus>
+    <Offline>0</Offline>
+    <CLIA>N</CLIA>
+    <PriorApprovalRequired>0</PriorApprovalRequired>
+    <PerformedOnHuman>1</PerformedOnHuman>
+    <PerformedOnAnimal>1</PerformedOnAnimal>
+    <PerformedOnFoodEnvironmentalMedicalBiologics>0</PerformedOnFoodEnvironmentalMedicalBiologics>
+    <CDCPOCFirst1>Katherine</CDCPOCFirst1>
+    <CDCPOCLast1>Johnson</CDCPOCLast1>
+    <CDCPOCPhone1></CDCPOCPhone1>
+    <CDCPOCemail1>katherine@example.cdc.gov</CDCPOCemail1>
+    <CDCPOCFirst2></CDCPOCFirst2>
+    <CDCPOCLast2></CDCPOCLast2>
+    <CDCPOCPhone2></CDCPOCPhone2>
+    <CDCPOCemail2></CDCPOCemail2>
+    <CDCPOCFirst3></CDCPOCFirst3>
+    <CDCPOCLast3></CDCPOCLast3>
+    <CDCPOCPhone3></CDCPOCPhone3>
+    <CDCPOCemail3></CDCPOCemail3>
+    <CDCPOCFirst4></CDCPOCFirst4>
+    <CDCPOCLast4></CDCPOCLast4>
+    <CDCPOCPhone4></CDCPOCPhone4>
+    <CDCPOCemail4></CDCPOCemail4>
+    <PriorApprovalFirst1></PriorApprovalFirst1>
+    <PriorApprovalLast1></PriorApprovalLast1>
+    <PriorApprovalPhone1></PriorApprovalPhone1>
+    <PriorApprovalemail1></PriorApprovalemail1>
+    <PriorApprovalFirst2></PriorApprovalFirst2>
+    <PriorApprovalLast2></PriorApprovalLast2>
+    <PriorApprovalPhone2></PriorApprovalPhone2>
+    <PriorApprovalemail2></PriorApprovalemail2>
+  </QryTableMerge>
+</dataroot>

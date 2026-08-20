@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1",
+  "catalogVersion": "1.2.0",
+  "generatedAt": "2026-08-13T02:45:21.876Z",
+  "publishedAt": "2026-08-13T02:45:21.876Z",
+  "generatedFrom": [
+    "features/assayindex/data/published/catalog.json",
+    "features/assayindex/data/published/source-offering-slices/cdc-infectious-diseases-test-directory.json"
+  ],
+  "contributingSourcePublishers": [
+    "arup",
+    "cdc",
+    "labcorp",
+    "mayo-clinic-labs",
+    "quest"
+  ],
+  "contributingAcquisitionSources": [
+    "cdc-infectious-diseases-test-directory"
+  ],
+  "contributingAttributionSources": [
+    "cdc-infectious-diseases-test-directory",
+    "arup-curated-catalog",
+    "mayo-clinic-labs-curated-catalog",
+    "quest-curated-catalog",
+    "labcorp-curated-catalog"
+  ],
+  "contributingReferenceLaboratories": [
+    "arup",
+    "cdc-infectious-diseases-laboratories",
+    "labcorp",
+    "mayo-clinic-labs",
+    "quest"
+  ],
+  "counts": {
+    "assays": 8,
+    "laboratories": 5,
+    "records": 16,
+    "sourceOfferings": 250,
+    "sourceDocuments": 22,
+    "curatedRelationships": 0,
+    "coOrderRelationships": 0
+  },
+  "files": [
+    {
+      "path": "assay-lab-records.csv",
+      "bytes": 7010,
+      "sha256": "7371098f7c53d9903254bf3eb1c456811fefa35ae82ed4a8b7678708135894f4"
+    },
+    {
+      "path": "catalog.json",
+      "bytes": 1427488,
+      "sha256": "220003ec4f59d0517dacfe08739c47ff4259f9e703f5da07a15072f0086cc905"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 69182,
+      "sha256": "e92e948f4c8481ee361d3eec9af71ce1ea8c3e26eff589cbaee86e7df2bbe69a"
+    },
+    {
+      "path": "SOURCE-ATTRIBUTION.json",
+      "bytes": 2510,
+      "sha256": "3c837e45739b20fb9fe7dfc6ada02688daaead4016b94bdcf713e70dadb7dce6"
+    },
+    {
+      "path": "source-offerings.csv",
+      "bytes": 1042709,
+      "sha256": "ba58cf1fe2c013da73621e5ba1e664e1dada042c236fc6ccf16e56bc72d9429c"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 9946,
+      "sha256": "0b7e2cc5ca64ae5e0411c165416705441bcf6cc516908cce8229560241ab5451"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1",
+  "catalogVersion": "1.2.0",
+  "generatedAt": "2026-08-13T02:45:21.876Z",
+  "sources": [
+    {
+      "sourceId": "cdc-infectious-diseases-test-directory",
+      "sourcePublisherId": "cdc",
+      "datasetName": "CDC Infectious Diseases Laboratory Test Directory",
+      "requiredAttribution": "Centers for Disease Control and Prevention (CDC), Infectious Diseases Laboratory Test Directory",
+      "requiredAttributionUrl": "https://www.cdc.gov/infectious-diseases-labs/php/test-directory/index.html",
+      "policyUrl": "https://www.cdc.gov/other/agencymaterials.html",
+      "disclaimer": "Source: CDC. AssayIndex is not endorsed by CDC, HHS, or the U.S. Government. The original Test Directory is available from CDC at no charge and is continually updated; verify current requirements with CDC."
+    },
+    {
+      "sourceId": "arup-curated-catalog",
+      "sourcePublisherId": "arup",
+      "datasetName": "Curated AssayIndex source documents",
+      "requiredAttribution": "ARUP Laboratories",
+      "requiredAttributionUrl": "https://ltd.aruplab.com",
+      "policyUrl": "https://www.aruplab.com/privacy/online",
+      "disclaimer": "Source: ARUP Laboratories. AssayIndex is independent; verify current ordering requirements directly with ARUP."
+    },
+    {
+      "sourceId": "mayo-clinic-labs-curated-catalog",
+      "sourcePublisherId": "mayo-clinic-labs",
+      "datasetName": "Curated AssayIndex source documents",
+      "requiredAttribution": "Mayo Clinic Laboratories",
+      "requiredAttributionUrl": "https://www.mayocliniclabs.com/test-catalog",
+      "policyUrl": "https://www.mayocliniclabs.com/customer-service/Policies",
+      "disclaimer": null
+    },
+    {
+      "sourceId": "quest-curated-catalog",
+      "sourcePublisherId": "quest",
+      "datasetName": "Curated AssayIndex source documents",
+      "requiredAttribution": "Quest Diagnostics",
+      "requiredAttributionUrl": "https://testdirectory.questdiagnostics.com/test/home",
+      "policyUrl": "https://www.questdiagnostics.com/our-company/terms-conditions",
+      "disclaimer": null
+    },
+    {
+      "sourceId": "labcorp-curated-catalog",
+      "sourcePublisherId": "labcorp",
+      "datasetName": "Curated AssayIndex source documents",
+      "requiredAttribution": "Labcorp",
+      "requiredAttributionUrl": "https://www.labcorp.com/test-menu/search",
+      "policyUrl": "https://www.labcorp.com/compliance/privacy/privacy-notice/online-services-user-agreement",
+      "disclaimer": null
+    }
+  ]
+}

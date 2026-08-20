@@ -1,0 +1,8 @@
+#accession_version	test_type	object	GTR_identifier	MIM_number	object_name	gene_or_SNOMED_CT_ID	gene_symbol
+GTR000004036.6	Clinical	condition	C1839780	300623	Fragile X-associated tremor/ataxia syndrome		N/A
+GTR000004036.6	Clinical	condition	C0016667	300624	Fragile X syndrome	613003	N/A
+GTR000004528.1	Clinical	gene	C0162832	611731	APC:APC regulator of Wnt signaling pathway	324	APC
+GTR000004036.6	Clinical	gene	C1414649	309550	FMR1:fragile X messenger ribonucleoprotein 1	2332	FMR1
+GTR000004528.1	Clinical	condition	C2713442	175100	Familial adenomatous polyposis 1		N/A
+GTR000004036.6	Clinical	condition	C4552079	311360	Premature ovarian failure 1		N/A
+GTR000004528.1	Clinical	gene	C1417505	604933	MUTYH:mutY DNA glycosylase	4595	MUTYH

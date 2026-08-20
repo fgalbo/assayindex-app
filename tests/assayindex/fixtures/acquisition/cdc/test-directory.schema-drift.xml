@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot generated="2026-08-03T10:06:35">
+  <QryTableMerge>
+    <CDCTestCode>CDC-10471</CDCTestCode>
+    <TestOrderNamSort>Ebola Virus Disease Testing</TestOrderNamSort>
+    <RenamedMethod>RT-PCR</RenamedMethod>
+  </QryTableMerge>
+</dataroot>

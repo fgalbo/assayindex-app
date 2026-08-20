@@ -1,0 +1,34 @@
+{
+  "_fixtureNotice": "Synthetic parser fixture. It is not a captured provider response.",
+  "sourceUrl": "https://ltd.aruplab.com/api/ltdsearch?searchterm=HLA-B27",
+  "retrievedAt": "2026-08-19T00:00:00.000Z",
+  "response": {
+    "resultList": {
+      "total": 3,
+      "start": 0,
+      "results": [
+        {
+          "testNumber": "0095840",
+          "testName": "HLA-B27",
+          "orderingRecommendation": "<p>Synthetic fixture: interpret only with supporting clinical findings.</p>",
+          "summary": "<span>Source-shaped summary for an HLA-B27 antigen assay.</span>",
+          "status": "A"
+        },
+        {
+          "testNumber": "3019466",
+          "testName": "Ankylosing Spondylitis (HLA-B27) Genotyping",
+          "orderingRecommendation": "<p>Synthetic genotyping fixture.</p>",
+          "summary": "Synthetic molecular-test summary.",
+          "status": "A"
+        },
+        {
+          "testNumber": "0050392",
+          "testName": "Historical HLA-B27 Genotyping Entry",
+          "orderingRecommendation": null,
+          "summary": "Synthetic inactive-result summary.",
+          "status": "I"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "catalogVersion": "2026.04-seed",
+  "generatedAt": "2026-08-12T12:00:00.000Z",
+  "downloads": [
+    {
+      "id": "catalog",
+      "label": "Catalog JSON",
+      "href": "/assayindex/downloads/catalog.json",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "id": "bundle",
+      "label": "Provenance bundle",
+      "href": "/assayindex/downloads/release-bundle.json",
+      "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    {
+      "id": "checksums",
+      "label": "SHA-256 checksums",
+      "href": "/assayindex/downloads/SHA256SUMS.txt",
+      "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    }
+  ],
+  "manifest": {
+    "contributingReferenceLaboratories": [
+      "mayo-clinic-laboratories"
+    ]
+  },
+  "referenceLaboratories": [
+    {
+      "referenceLaboratoryId": "mayo-clinic-laboratories",
+      "label": "Mayo Clinic Laboratories",
+      "href": "https://www.mayocliniclabs.com/",
+      "notice": "Source attribution for a contributing reference laboratory."
+    }
+  ]
+}

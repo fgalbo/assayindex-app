@@ -1,0 +1,178 @@
+{
+  "catalogVersion": "1.2.0",
+  "generatedAt": "2026-08-13T02:45:21.876Z",
+  "downloads": [
+    {
+      "id": "catalog",
+      "label": "Catalog JSON",
+      "href": "/assayindex/downloads/catalog.json",
+      "sha256": "220003ec4f59d0517dacfe08739c47ff4259f9e703f5da07a15072f0086cc905",
+      "bytes": 1427488
+    },
+    {
+      "id": "records-csv",
+      "label": "Lab records CSV",
+      "href": "/assayindex/downloads/assay-lab-records.csv",
+      "sha256": "7371098f7c53d9903254bf3eb1c456811fefa35ae82ed4a8b7678708135894f4",
+      "bytes": 7010
+    },
+    {
+      "id": "source-offerings-csv",
+      "label": "Source offerings CSV",
+      "href": "/assayindex/downloads/source-offerings.csv",
+      "sha256": "ba58cf1fe2c013da73621e5ba1e664e1dada042c236fc6ccf16e56bc72d9429c",
+      "bytes": 1042709
+    },
+    {
+      "id": "source-attribution",
+      "label": "Source attribution",
+      "href": "/assayindex/downloads/SOURCE-ATTRIBUTION.json",
+      "sha256": "3c837e45739b20fb9fe7dfc6ada02688daaead4016b94bdcf713e70dadb7dce6",
+      "bytes": 2510
+    },
+    {
+      "id": "bundle",
+      "label": "Provenance bundle",
+      "href": "/assayindex/downloads/release-bundle.json",
+      "sha256": "682a3ffab5acc070ddf4f7f365448465eaf22bfedd84aa0a6caf4a97b9263191",
+      "bytes": 2694256
+    },
+    {
+      "id": "checksums",
+      "label": "SHA-256 checksums",
+      "href": "/assayindex/downloads/SHA256SUMS.txt",
+      "sha256": "789c0995c00d311e4a6eb81260c8df2b3926d30625c8d7432569e5ecd793f2db",
+      "bytes": 585
+    }
+  ],
+  "manifest": {
+    "contributingSourcePublishers": [
+      "arup",
+      "cdc",
+      "labcorp",
+      "mayo-clinic-labs",
+      "quest"
+    ],
+    "contributingAcquisitionSources": [
+      "cdc-infectious-diseases-test-directory"
+    ],
+    "contributingReferenceLaboratories": [
+      "arup",
+      "cdc-infectious-diseases-laboratories",
+      "labcorp",
+      "mayo-clinic-labs",
+      "quest"
+    ]
+  },
+  "sourceAttributions": [
+    {
+      "sourceId": "cdc-infectious-diseases-test-directory",
+      "sourcePublisherId": "cdc",
+      "datasetName": "CDC Infectious Diseases Laboratory Test Directory",
+      "requiredAttribution": "Centers for Disease Control and Prevention (CDC), Infectious Diseases Laboratory Test Directory",
+      "requiredAttributionUrl": "https://www.cdc.gov/infectious-diseases-labs/php/test-directory/index.html",
+      "policyUrl": "https://www.cdc.gov/other/agencymaterials.html",
+      "disclaimer": "Source: CDC. AssayIndex is not endorsed by CDC, HHS, or the U.S. Government. The original Test Directory is available from CDC at no charge and is continually updated; verify current requirements with CDC."
+    },
+    {
+      "sourceId": "arup-curated-catalog",
+      "sourcePublisherId": "arup",
+      "datasetName": "Curated AssayIndex source documents",
+      "requiredAttribution": "ARUP Laboratories",
+      "requiredAttributionUrl": "https://ltd.aruplab.com",
+      "policyUrl": "https://www.aruplab.com/privacy/online",
+      "disclaimer": "Source: ARUP Laboratories. AssayIndex is independent; verify current ordering requirements directly with ARUP."
+    },
+    {
+      "sourceId": "mayo-clinic-labs-curated-catalog",
+      "sourcePublisherId": "mayo-clinic-labs",
+      "datasetName": "Curated AssayIndex source documents",
+      "requiredAttribution": "Mayo Clinic Laboratories",
+      "requiredAttributionUrl": "https://www.mayocliniclabs.com/test-catalog",
+      "policyUrl": "https://www.mayocliniclabs.com/customer-service/Policies",
+      "disclaimer": null
+    },
+    {
+      "sourceId": "quest-curated-catalog",
+      "sourcePublisherId": "quest",
+      "datasetName": "Curated AssayIndex source documents",
+      "requiredAttribution": "Quest Diagnostics",
+      "requiredAttributionUrl": "https://testdirectory.questdiagnostics.com/test/home",
+      "policyUrl": "https://www.questdiagnostics.com/our-company/terms-conditions",
+      "disclaimer": null
+    },
+    {
+      "sourceId": "labcorp-curated-catalog",
+      "sourcePublisherId": "labcorp",
+      "datasetName": "Curated AssayIndex source documents",
+      "requiredAttribution": "Labcorp",
+      "requiredAttributionUrl": "https://www.labcorp.com/test-menu/search",
+      "policyUrl": "https://www.labcorp.com/compliance/privacy/privacy-notice/online-services-user-agreement",
+      "disclaimer": null
+    }
+  ],
+  "sourcePublishers": [
+    {
+      "sourcePublisherId": "arup",
+      "label": "ARUP Laboratories",
+      "href": "https://ltd.aruplab.com",
+      "notice": "Source: ARUP Laboratories. AssayIndex is independent; verify current ordering requirements directly with ARUP."
+    },
+    {
+      "sourcePublisherId": "cdc",
+      "label": "Centers for Disease Control and Prevention (CDC), Infectious Diseases Laboratory Test Directory",
+      "href": "https://www.cdc.gov/infectious-diseases-labs/php/test-directory/index.html",
+      "notice": "Source: CDC. AssayIndex is not endorsed by CDC, HHS, or the U.S. Government. The original Test Directory is available from CDC at no charge and is continually updated; verify current requirements with CDC."
+    },
+    {
+      "sourcePublisherId": "labcorp",
+      "label": "Labcorp",
+      "href": "https://www.labcorp.com/test-menu/search",
+      "notice": "Source attribution for a contributing data publisher."
+    },
+    {
+      "sourcePublisherId": "mayo-clinic-labs",
+      "label": "Mayo Clinic Laboratories",
+      "href": "https://www.mayocliniclabs.com/test-catalog",
+      "notice": "Source attribution for a contributing data publisher."
+    },
+    {
+      "sourcePublisherId": "quest",
+      "label": "Quest Diagnostics",
+      "href": "https://testdirectory.questdiagnostics.com/test/home",
+      "notice": "Source attribution for a contributing data publisher."
+    }
+  ],
+  "referenceLaboratories": [
+    {
+      "referenceLaboratoryId": "arup",
+      "label": "ARUP Laboratories",
+      "href": "https://ltd.aruplab.com",
+      "notice": "Source attribution for a contributing reference laboratory."
+    },
+    {
+      "referenceLaboratoryId": "mayo-clinic-labs",
+      "label": "Mayo Clinic Laboratories",
+      "href": "https://www.mayocliniclabs.com/test-catalog",
+      "notice": "Source attribution for a contributing reference laboratory."
+    },
+    {
+      "referenceLaboratoryId": "quest",
+      "label": "Quest Diagnostics",
+      "href": "https://www.questdiagnostics.com/healthcare-professionals",
+      "notice": "Source attribution for a contributing reference laboratory."
+    },
+    {
+      "referenceLaboratoryId": "labcorp",
+      "label": "Labcorp",
+      "href": "https://www.labcorp.com/test-menu/search",
+      "notice": "Source attribution for a contributing reference laboratory."
+    },
+    {
+      "referenceLaboratoryId": "cdc-infectious-diseases-laboratories",
+      "label": "CDC Infectious Diseases Laboratories",
+      "href": "https://www.cdc.gov/infectious-diseases-labs/php/test-directory/index.html",
+      "notice": "Source attribution for a contributing reference laboratory."
+    }
+  ]
+}

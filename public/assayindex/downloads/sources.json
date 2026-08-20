@@ -1,0 +1,290 @@
+[
+  {
+    "id": "src-mayo-hla-b27-overview",
+    "assaySlug": "hla-b27",
+    "labId": "mayo-clinic-labs",
+    "label": "Mayo HLA-B27 overview",
+    "url": "https://www.mayocliniclabs.com/test-catalog/overview/9648",
+    "sourceType": "test-page",
+    "relatedRecordIds": [
+      "mayo-hla-b27"
+    ],
+    "note": "Specimen requirements, useful-for text, and LOINC.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-labcorp-hla-b27-overview",
+    "assaySlug": "hla-b27",
+    "labId": "labcorp",
+    "label": "Labcorp HLA-B27 disease association",
+    "url": "https://www.labcorp.com/tests/006924/hla-b-27-disease-association",
+    "sourceType": "test-page",
+    "relatedRecordIds": [
+      "labcorp-hla-b27"
+    ],
+    "note": "Methodology, specimen requirements, turnaround time, and use.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-quest-hla-menu",
+    "assaySlug": "hla-b27",
+    "labId": "quest",
+    "label": "Quest autoimmune testing menu PDF",
+    "url": "https://www.questdiagnostics.com/content/dam/corporate/restricted/documents/hcp/q1-sprint--ana/lab-director/TL12703_10599-SprintTestMenu_2-12-24_v4.pdf",
+    "sourceType": "pdf",
+    "relatedRecordIds": [
+      "quest-hla-b27",
+      "quest-tpmt-genotype"
+    ],
+    "note": "Quest PDF menu used for provider test codes.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-arup-bcr-p210-overview",
+    "assaySlug": "bcr-abl1-p210-quantitative",
+    "labId": "arup",
+    "label": "ARUP BCR::ABL1 p210 quantitative overview",
+    "url": "https://ltd.aruplab.com/Tests/Pub/3005840",
+    "sourceType": "test-page",
+    "relatedRecordIds": [
+      "arup-bcr-abl1-p210"
+    ],
+    "note": "Ordering recommendation and specimen handling.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-arup-bcr-p210-pdf",
+    "assaySlug": "bcr-abl1-p210-quantitative",
+    "labId": "arup",
+    "label": "ARUP BCR-ABL1 qualitative and quantitative testing PDF",
+    "url": "https://ltd.aruplab.com/api/ltd/pdf/143",
+    "sourceType": "pdf",
+    "relatedRecordIds": [
+      "arup-bcr-abl1-p210"
+    ],
+    "note": "Supporting assay selection guide.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-mayo-bcrab-overview",
+    "assaySlug": "bcr-abl1-p210-quantitative",
+    "labId": "mayo-clinic-labs",
+    "label": "Mayo BCRAB overview",
+    "url": "https://www.mayocliniclabs.com/test-catalog/overview/89007",
+    "sourceType": "test-page",
+    "relatedRecordIds": [
+      "mayo-bcr-abl1-p210"
+    ],
+    "note": "Assay description and LOINC.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-mayo-bcr-ordering-guide",
+    "assaySlug": "bcr-abl1-p210-quantitative",
+    "labId": "mayo-clinic-labs",
+    "label": "Mayo BCR/ABL1 ordering guide",
+    "url": "https://www.mayocliniclabs.com/it-mmfiles/BCR-ABL1_Ordering_Guide_For_Blood_and_Bone_Marrow.pdf",
+    "sourceType": "pdf",
+    "relatedRecordIds": [
+      "mayo-bcr-abl1-p210",
+      "mayo-bcr-abl1-resistance"
+    ],
+    "note": "Ordering workflow reference for blood and marrow assays.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-arup-f5-overview",
+    "assaySlug": "factor-v-leiden-r506q",
+    "labId": "arup",
+    "label": "ARUP Factor V Leiden overview",
+    "url": "https://ltd.aruplab.com/Tests/Pub/0097720",
+    "sourceType": "test-page",
+    "relatedRecordIds": [
+      "arup-factor-v-leiden"
+    ],
+    "note": "Genetic test requirements and code metadata.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-mayo-f5dna-overview",
+    "assaySlug": "factor-v-leiden-r506q",
+    "labId": "mayo-clinic-labs",
+    "label": "Mayo F5DNA overview",
+    "url": "https://www.mayocliniclabs.com/test-catalog/overview/81419",
+    "sourceType": "test-page",
+    "relatedRecordIds": [
+      "mayo-factor-v-leiden"
+    ],
+    "note": "Specimen requirements and LOINC details.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-mayo-tpnuq-overview",
+    "assaySlug": "tpmt-nudt15-genotyping",
+    "labId": "mayo-clinic-labs",
+    "label": "Mayo TPNUQ overview",
+    "url": "https://www.mayocliniclabs.com/test-catalog/overview/610062",
+    "sourceType": "test-page",
+    "relatedRecordIds": [
+      "mayo-tpmt-nudt15"
+    ],
+    "note": "Gene content, cautions, and LOINC.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-mayo-thiopurine-algorithm",
+    "assaySlug": "tpmt-nudt15-genotyping",
+    "labId": "mayo-clinic-labs",
+    "label": "Mayo thiopurine testing algorithm PDF",
+    "url": "https://www.mayocliniclabs.com/~/media/it-mmfiles/special-instructions/TPMT-Testing-Treatment-Inflammatory-Bowel-Disease-Algorithm.pdf",
+    "sourceType": "pdf",
+    "relatedRecordIds": [
+      "mayo-tpmt-nudt15"
+    ],
+    "note": "Clinical workflow support document.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-quest-tpmt-intellitest",
+    "assaySlug": "tpmt-nudt15-genotyping",
+    "labId": "quest",
+    "label": "Quest IntelliTest Manager TPMT genotype",
+    "url": "https://intellitestmanager.questdiagnostics.com/home/output/256712",
+    "sourceType": "reference",
+    "relatedRecordIds": [
+      "quest-tpmt-genotype"
+    ],
+    "note": "Quest public interface mapping page for TPMT genotype.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-labcorp-egfr-overview",
+    "assaySlug": "egfr-mutation-analysis-nsclc",
+    "labId": "labcorp",
+    "label": "Labcorp EGFR mutation analysis",
+    "url": "https://oncology.labcorp.com/tests/489360/egfr-mutation-analysis",
+    "sourceType": "test-page",
+    "relatedRecordIds": [
+      "labcorp-egfr-mutation"
+    ],
+    "note": "NSCLC EGFR test page.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-labcorp-hiv-overview",
+    "assaySlug": "hiv-1-rna-quantitative",
+    "labId": "labcorp",
+    "label": "Labcorp HIV-1 quantitative PCR",
+    "url": "https://www.labcorp.com/tests/550420",
+    "sourceType": "test-page",
+    "relatedRecordIds": [
+      "labcorp-hiv1-rna"
+    ],
+    "note": "Graphical HIV-1 viral load assay page.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-labcorp-hiv-guide",
+    "assaySlug": "hiv-1-rna-quantitative",
+    "labId": "labcorp",
+    "label": "Labcorp HIV specimen collection guide",
+    "url": "https://www.labcorp.com/assets/5806",
+    "sourceType": "reference",
+    "relatedRecordIds": [
+      "labcorp-hiv1-rna"
+    ],
+    "note": "Supplemental specimen workflow document.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-quest-hiv-portfolio",
+    "assaySlug": "hiv-1-rna-quantitative",
+    "labId": "quest",
+    "label": "Quest HIV portfolio overview PDF",
+    "url": "https://www.questdiagnostics.com/content/dam/corporate/restricted/documents/hcp/about-our-tests/SB6659_HIV-Portfolio-Overview.PDF",
+    "sourceType": "pdf",
+    "relatedRecordIds": [
+      "quest-hiv1-rna"
+    ],
+    "note": "Contains Quest HIV-1 RNA quantitative monitoring listing.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-quest-hiv-overview",
+    "assaySlug": "hiv-1-rna-quantitative",
+    "labId": "quest",
+    "label": "Quest HIV testing overview",
+    "url": "https://www.questdiagnostics.com/healthcare-professionals/about-our-tests/infectious-diseases/hiv",
+    "sourceType": "overview",
+    "relatedRecordIds": [
+      "quest-hiv1-rna"
+    ],
+    "note": "Broader HIV testing program context.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-labcorp-hfe-overview",
+    "assaySlug": "hereditary-hemochromatosis-hfe",
+    "labId": "labcorp",
+    "label": "Labcorp hereditary hemochromatosis DNA analysis",
+    "url": "https://www.labcorp.com/tests/511345/hereditary-hemochromatosis-dna-analysis",
+    "sourceType": "test-page",
+    "relatedRecordIds": [
+      "labcorp-hfe"
+    ],
+    "note": "Primary HFE variant analysis page.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-quest-hfe-faq",
+    "assaySlug": "hereditary-hemochromatosis-hfe",
+    "labId": "quest",
+    "label": "Quest hereditary hemochromatosis FAQ",
+    "url": "https://www.questdiagnostics.com/healthcare-professionals/clinical-education-center/faq/hemochromatos",
+    "sourceType": "faq",
+    "relatedRecordIds": [
+      "quest-hfe"
+    ],
+    "note": "Hereditary hemochromatosis testing overview FAQ.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-quest-hfe-lcd",
+    "assaySlug": "hereditary-hemochromatosis-hfe",
+    "labId": "quest",
+    "label": "Quest Medicare LCD molecular hemochromatosis PDF",
+    "url": "https://www.questdiagnostics.com/content/dam/corporate/restricted/documents/mlcp/mlcp/jk-ngs/jk-ngs---mlcp---l35000---molecular-pathology-hemochromatosis/JK-NGS---MLCP---L35000---Molecular-Hemochromatosis.pdf",
+    "sourceType": "pdf",
+    "relatedRecordIds": [
+      "quest-hfe"
+    ],
+    "note": "Used only for informational ICD-10 code association.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-arup-bcr-resistance-overview",
+    "assaySlug": "bcr-abl1-kinase-domain-resistance",
+    "labId": "arup",
+    "label": "ARUP BCR-ABL1 resistance NGS overview",
+    "url": "https://ltd.aruplab.com/Tests/Pub/2008420",
+    "sourceType": "test-page",
+    "relatedRecordIds": [
+      "arup-bcr-abl1-resistance"
+    ],
+    "note": "Primary NGS resistance assay page.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "src-mayo-bakdm-overview",
+    "assaySlug": "bcr-abl1-kinase-domain-resistance",
+    "labId": "mayo-clinic-labs",
+    "label": "Mayo BAKDM overview",
+    "url": "https://www.mayocliniclabs.com/test-catalog/Overview/89609",
+    "sourceType": "test-page",
+    "relatedRecordIds": [
+      "mayo-bcr-abl1-resistance"
+    ],
+    "note": "Primary kinase domain mutation screen page.",
+    "verifiedAt": "2026-04-15T00:00:00.000Z"
+  }
+]
