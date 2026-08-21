@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1",
-  "catalogVersion": "1.2.0",
-  "generatedAt": "2026-08-13T02:45:21.876Z",
-  "publishedAt": "2026-08-13T02:45:21.876Z",
+  "catalogVersion": "1.2.1",
+  "generatedAt": "2026-08-21T00:59:50.909Z",
+  "publishedAt": "2026-08-21T00:59:50.909Z",
   "generatedFrom": [
     "features/assayindex/data/published/catalog.json",
     "features/assayindex/data/published/source-offering-slices/cdc-infectious-diseases-test-directory.json"
@@ -49,7 +49,7 @@
     {
       "path": "catalog.json",
       "bytes": 1427488,
-      "sha256": "220003ec4f59d0517dacfe08739c47ff4259f9e703f5da07a15072f0086cc905"
+      "sha256": "05c5a4a601f770bf488c263c3f7132cd7fc0a1f6df9d27c6a857e9441c3aa4c0"
     },
     {
       "path": "provenance.json",
@@ -59,7 +59,7 @@
     {
       "path": "SOURCE-ATTRIBUTION.json",
       "bytes": 2510,
-      "sha256": "3c837e45739b20fb9fe7dfc6ada02688daaead4016b94bdcf713e70dadb7dce6"
+      "sha256": "11649524093807a2487556f9dcbe2612d4b13efc2dfbd34a9e68112eefd701a1"
     },
     {
       "path": "source-offerings.csv",

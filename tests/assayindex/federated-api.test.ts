@@ -139,7 +139,16 @@ describe("federated source detail API", () => {
       requestId: "request-1",
       sourceLab: "arup",
       status: "success",
-      parsed: { sourceTitle: "HLA-B27" },
+      parsed: {
+        sourceTitle: "HLA-B27",
+        cptCodes: ["86812"],
+        fieldProvenance: {
+          cptCodes: {
+            rawValue: "86812",
+            normalizedValue: ["86812"],
+          },
+        },
+      },
       curator: { status: "not-configured" },
     });
 
@@ -150,11 +159,14 @@ describe("federated source detail API", () => {
 
     expect(response.status).toBe(200);
     expect(response.headers.get("cache-control")).toBe("private, no-store");
-    await expect(response.json()).resolves.toMatchObject({
+    const body = await response.json();
+    expect(body).toMatchObject({
       sourceLab: "arup",
       status: "success",
       curator: { status: "not-configured" },
     });
+    expect(body.parsed.cptCodes).toEqual([]);
+    expect(body.parsed.fieldProvenance).not.toHaveProperty("cptCodes");
     expect(orchestratorMocks.fetchLaboratorySourceDetails).toHaveBeenCalledWith({
       sourceLab: "arup",
       sourceRef: "arup:test:0095840",

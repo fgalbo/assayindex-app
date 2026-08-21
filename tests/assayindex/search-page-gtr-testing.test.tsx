@@ -4,12 +4,12 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { publishedCatalog } from "@/features/assayindex/data/published/catalog";
 import { SearchPage } from "@/features/assayindex/pages/search-page";
 
-const navigationMocks = vi.hoisted(() => ({ push: vi.fn(), replace: vi.fn() }));
+const navigationMocks = vi.hoisted(() => ({ push: vi.fn(), replace: vi.fn(), search: "q=TP53" }));
 
 vi.mock("next/navigation", () => ({
   usePathname: () => "/assayindex/search",
   useRouter: () => navigationMocks,
-  useSearchParams: () => new URLSearchParams("q=TP53"),
+  useSearchParams: () => new URLSearchParams(navigationMocks.search),
 }));
 
 vi.mock("@/features/assayindex/data/live-catalog", () => ({
@@ -64,6 +64,7 @@ const response = {
 
 describe("SearchPage validated GTR testing results", () => {
   beforeEach(() => {
+    navigationMocks.search = "q=TP53";
     vi.useFakeTimers();
     vi.stubGlobal("fetch", vi.fn().mockResolvedValue({
       ok: true,
@@ -104,5 +105,20 @@ describe("SearchPage validated GTR testing results", () => {
     );
     expect(within(section!).queryByText(/curated AssayIndex publication/i)).not.toBeInTheDocument();
     expect(within(section!).getByText(/kept separate from curated AssayIndex records/i)).toBeInTheDocument();
+  });
+
+  it("hides completed results immediately when the submitted query changes", async () => {
+    const { rerender } = render(<SearchPage catalog={publishedCatalog} />);
+
+    await act(async () => {
+      await vi.advanceTimersByTimeAsync(500);
+    });
+    expect(screen.getByRole("link", { name: /Li-Fraumeni Syndrome/ })).toBeInTheDocument();
+
+    navigationMocks.search = "q=HLA-B27";
+    rerender(<SearchPage catalog={publishedCatalog} />);
+
+    expect(screen.queryByRole("link", { name: /Li-Fraumeni Syndrome/ })).not.toBeInTheDocument();
+    expect(screen.getByText("Searching the validated GTR index…")).toBeInTheDocument();
   });
 });

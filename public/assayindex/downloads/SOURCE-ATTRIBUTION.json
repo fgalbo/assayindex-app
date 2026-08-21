@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1",
-  "catalogVersion": "1.2.0",
-  "generatedAt": "2026-08-13T02:45:21.876Z",
+  "catalogVersion": "1.2.1",
+  "generatedAt": "2026-08-21T00:59:50.909Z",
   "sources": [
     {
       "sourceId": "cdc-infectious-diseases-test-directory",

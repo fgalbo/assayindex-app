@@ -46,7 +46,13 @@ function DetailSummary({ parsed }: { parsed: ParsedSourceOffering }) {
         <p><span className="font-semibold">Turnaround:</span> {parsed.turnaroundTime ?? "Not listed by source"}</p>
         <p><span className="font-semibold">Specimen / collection:</span> {specimen?.specimenType ?? "Not listed by source"}</p>
         <p><span className="font-semibold">Minimum volume:</span> {specimen?.minimumVolume ?? "Not listed by source"}</p>
-        <p><span className="font-semibold">CPT:</span> {parsed.cptCodes.join(", ") || "Not listed by source"}</p>
+        <p>
+          <span className="font-semibold">Billing codes:</span>{" "}
+          <a className="text-[#0f5f79] underline-offset-4 hover:underline" href={parsed.sourceUrl} rel="noreferrer" target="_blank">
+            Verify at the official source
+          </a>
+          {" "}(CPT content is not republished by AssayIndex.)
+        </p>
         <p>
           <span className="font-semibold">LOINC:</span>{" "}
           {parsed.loincCodes.length > 0

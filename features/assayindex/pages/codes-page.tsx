@@ -83,7 +83,7 @@ export function CodesPage({ catalog }: CodesPageProps) {
   return (
     <AssayIndexShell
       title="Code explorer"
-      description="Browse CPT, ICD-10, and LOINC associations with scope-aware links back to assay detail pages and current lab coverage."
+      description="Browse ICD-10 and LOINC associations with scope-aware links back to assay detail pages and current lab coverage."
     >
       <section className="assayindex-panel p-5 md:p-6">
         <div className="grid gap-4 md:grid-cols-[minmax(0,1.4fr)_240px]">
@@ -110,12 +110,15 @@ export function CodesPage({ catalog }: CodesPageProps) {
             }
           >
             <option value="">All code families</option>
-            <option value="CPT">CPT</option>
             <option value="ICD10">ICD-10</option>
             <option value="LOINC">LOINC</option>
             <option value="OTHER">Other</option>
           </select>
         </div>
+        <p className="mt-4 text-xs leading-6 text-[#607684]">
+          CPT content is not republished by AssayIndex. Verify current billing codes with the
+          performing laboratory or an appropriately licensed coding source.
+        </p>
       </section>
 
       <section className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_minmax(340px,0.82fr)]">

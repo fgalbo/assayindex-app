@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "AssayIndex Published Catalog",
-    "version": "1.2.0",
-    "lastPublishedAt": "2026-08-13T02:45:21.876Z",
+    "version": "1.2.1",
+    "lastPublishedAt": "2026-08-21T00:59:50.909Z",
     "disclaimer": "AssayIndex is an informational reference workspace. Verify current requirements, ordering details, and billing guidance with the source laboratory before ordering or submitting claims."
   },
   "assays": [

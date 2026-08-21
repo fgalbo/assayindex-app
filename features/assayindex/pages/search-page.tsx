@@ -63,7 +63,6 @@ export function SearchPage({ catalog }: SearchPageProps) {
       specimenType: searchParams.get("specimenType") || undefined,
       methodology: searchParams.get("methodology") || undefined,
       hasReflexLogic: searchParams.get("hasReflexLogic") === "1" ? true : undefined,
-      hasCpt: searchParams.get("hasCpt") === "1" ? true : undefined,
       hasLoinc: searchParams.get("hasLoinc") === "1" ? true : undefined,
     }),
     [searchParams],
@@ -76,12 +75,12 @@ export function SearchPage({ catalog }: SearchPageProps) {
   );
   const visibleResults = results.slice(0, visibleResultCount);
   const boundedActiveIndex = Math.min(activeIndex, Math.max(visibleResults.length - 1, 0));
-  const testingQuery = deferredQuery.trim();
-  const currentGtrSearch: GtrSearchState = gtrSearch.query === testingQuery
+  const currentTestingQuery = query.trim();
+  const currentGtrSearch: GtrSearchState = gtrSearch.query === currentTestingQuery
     ? gtrSearch
     : {
-        status: testingQuery.length >= 2 ? "loading" : "idle",
-        query: testingQuery,
+        status: currentTestingQuery.length >= 2 ? "loading" : "idle",
+        query: currentTestingQuery,
         data: null,
       };
 
@@ -218,7 +217,7 @@ export function SearchPage({ catalog }: SearchPageProps) {
         </div>
 
         <p className="assayindex-filter-label">Refine the result set</p>
-        <div className="assayindex-search-controls grid gap-3 md:grid-cols-3 xl:grid-cols-7">
+        <div className="assayindex-search-controls grid gap-3 md:grid-cols-3 xl:grid-cols-6">
           <select
             aria-label="Filter by category"
             className="assayindex-focus-ring rounded-2xl border border-[#cad7de] px-4 py-3 text-sm text-[#153042]"
@@ -278,14 +277,6 @@ export function SearchPage({ catalog }: SearchPageProps) {
             onClick={() => updateSearchParams({ hasReflexLogic: filters.hasReflexLogic ? "" : "1" })}
           >
             {filters.hasReflexLogic ? "With reflex only" : "Any reflex status"}
-          </button>
-          <button
-            aria-pressed={Boolean(filters.hasCpt)}
-            className="assayindex-focus-ring rounded-2xl border border-[#cad7de] px-4 py-3 text-sm text-[#153042]"
-            type="button"
-            onClick={() => updateSearchParams({ hasCpt: filters.hasCpt ? "" : "1" })}
-          >
-            {filters.hasCpt ? "Has CPT only" : "Any CPT status"}
           </button>
           <button
             aria-pressed={Boolean(filters.hasLoinc)}

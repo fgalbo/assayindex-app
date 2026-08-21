@@ -65,7 +65,7 @@ describe("source-offering search disclosure", () => {
       expect(screen.getByRole("combobox", { name: label })).toBeInTheDocument();
     }
 
-    for (const label of ["Any reflex status", "Any CPT status", "Any LOINC status"]) {
+    for (const label of ["Any reflex status", "Any LOINC status"]) {
       expect(screen.getByRole("button", { name: label })).toHaveAttribute("aria-pressed", "false");
     }
   });

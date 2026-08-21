@@ -17,6 +17,26 @@ export const maxDuration = 30;
 const MAX_REQUEST_BYTES = 2_048;
 const NO_STORE_HEADERS = { "Cache-Control": "private, no-store" };
 
+function projectPublicSourceDetails(
+  result: Awaited<ReturnType<typeof fetchLaboratorySourceDetails>>,
+) {
+  if (result.status !== "success") {
+    return result;
+  }
+
+  const fieldProvenance = { ...result.parsed.fieldProvenance };
+  delete fieldProvenance.cptCodes;
+
+  return {
+    ...result,
+    parsed: {
+      ...result.parsed,
+      cptCodes: [],
+      fieldProvenance,
+    },
+  };
+}
+
 export async function POST(request: Request) {
   try {
     const body = await readBoundedJsonRequest(request, MAX_REQUEST_BYTES);
@@ -32,7 +52,7 @@ export async function POST(request: Request) {
       sourceRef: input.sourceRef,
       requestId: randomUUID(),
     });
-    return NextResponse.json(result, { headers: NO_STORE_HEADERS });
+    return NextResponse.json(projectPublicSourceDetails(result), { headers: NO_STORE_HEADERS });
   } catch (error) {
     if (error instanceof RequestBodyError) {
       return NextResponse.json({ error: error.code }, { status: 400, headers: NO_STORE_HEADERS });

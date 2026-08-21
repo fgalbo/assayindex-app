@@ -264,6 +264,8 @@ describe("SearchPage federated laboratory discovery", () => {
     expect(within(liveSection).getByText(/1-2 days/)).toBeInTheDocument();
     expect(within(liveSection).getByText(/Whole blood/)).toBeInTheDocument();
     expect(within(liveSection).getByText(/0.5 mL/)).toBeInTheDocument();
+    expect(within(liveSection).getByText(/CPT content is not republished by AssayIndex/i)).toBeInTheDocument();
+    expect(within(liveSection).queryByText("86812")).not.toBeInTheDocument();
     expect(within(liveSection).getByRole("link", { name: "26028-1" })).toHaveAttribute(
       "href",
       "https://loinc.org/26028-1/",

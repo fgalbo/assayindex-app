@@ -1,12 +1,12 @@
 {
-  "catalogVersion": "1.2.0",
-  "generatedAt": "2026-08-13T02:45:21.876Z",
+  "catalogVersion": "1.2.1",
+  "generatedAt": "2026-08-21T00:59:50.909Z",
   "downloads": [
     {
       "id": "catalog",
       "label": "Catalog JSON",
       "href": "/assayindex/downloads/catalog.json",
-      "sha256": "220003ec4f59d0517dacfe08739c47ff4259f9e703f5da07a15072f0086cc905",
+      "sha256": "05c5a4a601f770bf488c263c3f7132cd7fc0a1f6df9d27c6a857e9441c3aa4c0",
       "bytes": 1427488
     },
     {
@@ -27,21 +27,21 @@
       "id": "source-attribution",
       "label": "Source attribution",
       "href": "/assayindex/downloads/SOURCE-ATTRIBUTION.json",
-      "sha256": "3c837e45739b20fb9fe7dfc6ada02688daaead4016b94bdcf713e70dadb7dce6",
+      "sha256": "11649524093807a2487556f9dcbe2612d4b13efc2dfbd34a9e68112eefd701a1",
       "bytes": 2510
     },
     {
       "id": "bundle",
       "label": "Provenance bundle",
       "href": "/assayindex/downloads/release-bundle.json",
-      "sha256": "682a3ffab5acc070ddf4f7f365448465eaf22bfedd84aa0a6caf4a97b9263191",
+      "sha256": "8f03c2c5bb828de2034c016b36e480faab327ce719d5542603036c7d3ef83690",
       "bytes": 2694256
     },
     {
       "id": "checksums",
       "label": "SHA-256 checksums",
       "href": "/assayindex/downloads/SHA256SUMS.txt",
-      "sha256": "789c0995c00d311e4a6eb81260c8df2b3926d30625c8d7432569e5ecd793f2db",
+      "sha256": "37b536347b8992d914d52e28de8259dd33d62683a9934c613dffb1e84e2cc4dc",
       "bytes": 585
     }
   ],
