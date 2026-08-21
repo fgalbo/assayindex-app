@@ -18,6 +18,21 @@ describe("assay search", () => {
     );
   });
 
+  it("finds assays by a laboratory-record synonym", () => {
+    const nextCatalog = structuredClone(publishedCatalog);
+    const record = nextCatalog.assayLabRecords[0];
+    record.synonyms.push("Unique laboratory order mnemonic");
+
+    const results = searchAllCatalog(
+      nextCatalog,
+      "Unique laboratory order mnemonic",
+      {},
+      "relevance",
+    );
+
+    expect(results.map((result) => result.document.assaySlug)).toContain(record.assaySlug);
+  });
+
   it("does not present weak fuzzy CDC matches as relevant gene results", () => {
     const results = searchAllCatalog(publishedCatalog, "TP53", {}, "relevance");
 

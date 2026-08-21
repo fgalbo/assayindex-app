@@ -65,6 +65,51 @@ const federatedResponse = {
   },
 };
 
+const ctngFederatedResponse = {
+  ...federatedResponse,
+  requestId: "request-ctng",
+  query: "CTNG",
+  sources: {
+    ...federatedResponse.sources,
+    arup: {
+      ...federatedResponse.sources.arup,
+      results: [{
+        sourceLab: "arup",
+        sourceRef: "arup:test:2011164",
+        sourceUrl: "https://ltd.aruplab.com/Tests/Pub/2011164",
+        sourceTestCode: "2011164",
+        title: "Chlamydia trachomatis and Neisseria gonorrhoeae (CTNG) by Transcription-Mediated Amplification (TMA) with Reflex to CT/NG Confirmation",
+        summary: "CTNG CONF",
+        orderingRecommendation: "Use to detect Chlamydia trachomatis and Neisseria gonorrhoeae.",
+        sourceStatus: "A",
+      }],
+    },
+  },
+};
+
+const ctngGtrResponse = {
+  schemaVersion: "1",
+  status: "validated-staged-testing",
+  query: "CTNG",
+  matchedCount: 0,
+  resultCount: 0,
+  truncated: false,
+  source: {
+    sourceId: "nih-gtr-test-version",
+    snapshotSha256: "a".repeat(64),
+    enrichmentSourceId: "nih-gtr-test-condition-gene",
+    enrichmentSnapshotSha256: "b".repeat(64),
+    retrievedAt: "2026-08-12T00:00:00.000Z",
+    updatedAt: "2026-08-09T00:00:00.000Z",
+    candidateCount: 64065,
+    reviewRequiredCandidateCount: 5,
+    attribution: "NIH Genetic Testing Registry (GTR)",
+    attributionUrl: "https://www.ncbi.nlm.nih.gov/gtr/",
+    disclaimer: "GTR data are submitted by laboratories and are not independently verified by NIH.",
+  },
+  results: [],
+};
+
 const federatedDetailResponse = {
   requestId: "request-detail-1",
   sourceLab: "arup",
@@ -141,7 +186,7 @@ describe("SearchPage federated laboratory discovery", () => {
     vi.unstubAllGlobals();
   });
 
-  it("never contacts the federated endpoint while the user types", async () => {
+  it("never contacts the federated endpoint while the user types when automatic fallback is disabled", async () => {
     const fetchMock = vi.fn();
     vi.stubGlobal("fetch", fetchMock);
     render(<SearchPage catalog={publishedCatalog} />);
@@ -153,6 +198,79 @@ describe("SearchPage federated laboratory discovery", () => {
 
     await Promise.resolve();
     expect(fetchMock.mock.calls.filter(([url]) => String(url).includes("/source-search"))).toHaveLength(0);
+  });
+
+  it("submits an unmatched clinical mnemonic to connected sources when Enter is pressed", async () => {
+    navigationMocks.search = "q=CTNG";
+    const fetchMock = vi.fn<(url: RequestInfo | URL, init?: RequestInit) => Promise<Response>>(async (url) => {
+      if (String(url) === "/api/assayindex/source-search") {
+        return { ok: true, json: async () => ctngFederatedResponse } as Response;
+      }
+      return {
+        ok: false,
+        json: async () => ({ error: "testing_source_unavailable" }),
+      } as Response;
+    });
+    vi.stubGlobal("fetch", fetchMock);
+    render(<SearchPage autoFallbackEnabled catalog={publishedCatalog} />);
+
+    expect(screen.getByRole("button", { name: "Search all sources" })).toBeEnabled();
+    fireEvent.keyDown(screen.getByRole("combobox", { name: "Search AssayIndex" }), {
+      key: "Enter",
+    });
+
+    await waitFor(() => {
+      expect(fetchMock.mock.calls.filter(([url]) => String(url).includes("/source-search"))).toHaveLength(1);
+    });
+    expect(fetchMock).toHaveBeenCalledWith(
+      "/api/assayindex/source-search",
+      expect.objectContaining({
+        method: "POST",
+        body: JSON.stringify({
+          query: "CTNG",
+          sources: ["arup", "mayo", "quest", "labcorp"],
+          refresh: false,
+        }),
+      }),
+    );
+    expect(await screen.findByRole("heading", {
+      name: /Chlamydia trachomatis and Neisseria gonorrhoeae \(CTNG\)/,
+    })).toBeInTheDocument();
+    expect(screen.getByText(/GTR returns no match or is unavailable/i)).toBeInTheDocument();
+    expect(await screen.findByText(/validated GTR testing index is temporarily unavailable/i)).toBeInTheDocument();
+    expect(fetchMock.mock.calls.filter(([url]) => String(url).includes("/source-search"))).toHaveLength(1);
+    expect(navigationMocks.push).not.toHaveBeenCalled();
+  });
+
+  it("automatically searches connected sources after local and GTR searches return no matches", async () => {
+    navigationMocks.search = "q=CTNG";
+    const fetchMock = vi.fn<(url: RequestInfo | URL, init?: RequestInit) => Promise<Response>>(async (url) => {
+      if (String(url) === "/api/assayindex/testing-search") {
+        return { ok: true, json: async () => ctngGtrResponse } as Response;
+      }
+      if (String(url) === "/api/assayindex/source-search") {
+        return { ok: true, json: async () => ctngFederatedResponse } as Response;
+      }
+      throw new Error(`Unexpected request: ${String(url)}`);
+    });
+    vi.stubGlobal("fetch", fetchMock);
+    render(<SearchPage autoFallbackEnabled catalog={publishedCatalog} />);
+
+    expect(await screen.findByRole("heading", {
+      name: /Chlamydia trachomatis and Neisseria gonorrhoeae \(CTNG\)/,
+    }, { timeout: 2_000 })).toBeInTheDocument();
+    expect(screen.queryByRole("heading", { name: "No search results" })).not.toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "No verified catalog or GTR matches" })).toBeInTheDocument();
+
+    const sourceCalls = fetchMock.mock.calls.filter(([url]) => String(url).includes("/source-search"));
+    expect(sourceCalls).toHaveLength(1);
+    expect(sourceCalls[0]?.[1]).toEqual(expect.objectContaining({
+      body: JSON.stringify({
+        query: "CTNG",
+        sources: ["arup", "mayo", "quest", "labcorp"],
+        refresh: false,
+      }),
+    }));
   });
 
   it("shows an independent accessible loading card for every requested laboratory", () => {

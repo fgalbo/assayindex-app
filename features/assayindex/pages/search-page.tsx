@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { startTransition, useDeferredValue, useEffect, useMemo, useState } from "react";
+import { startTransition, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 import { useLiveCatalog } from "@/features/assayindex/data/live-catalog";
@@ -12,10 +12,14 @@ import { pushRecentSearch } from "@/features/assayindex/storage/saved-state";
 import type { GtrTestingSearchResponse } from "@/features/assayindex/testing/types";
 
 import { AssayIndexShell } from "@/features/assayindex/components/assayindex-shell";
-import { FederatedSourceSearch } from "@/features/assayindex/components/federated-source-search";
+import {
+  FederatedSourceSearch,
+  type FederatedSourceSearchRequest,
+} from "@/features/assayindex/components/federated-source-search";
 
 type SearchPageProps = {
   catalog: AssayIndexCatalog;
+  autoFallbackEnabled?: boolean;
 };
 
 const INITIAL_RESULT_COUNT = 50;
@@ -42,7 +46,7 @@ function buildNextUrl(pathname: string, searchParams: URLSearchParams) {
   return queryString ? `${pathname}?${queryString}` : pathname;
 }
 
-export function SearchPage({ catalog }: SearchPageProps) {
+export function SearchPage({ autoFallbackEnabled = false, catalog }: SearchPageProps) {
   const { catalog: liveCatalog } = useLiveCatalog(catalog);
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -50,6 +54,8 @@ export function SearchPage({ catalog }: SearchPageProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [visibleResultCount, setVisibleResultCount] = useState(INITIAL_RESULT_COUNT);
   const [gtrSearch, setGtrSearch] = useState<GtrSearchState>({ status: "idle", query: "", data: null });
+  const [federatedSearchRequest, setFederatedSearchRequest] = useState<FederatedSourceSearchRequest | null>(null);
+  const lastAutoFallbackQuery = useRef<string | null>(null);
 
   const query = searchParams.get("q") ?? "";
   const deferredQuery = useDeferredValue(query);
@@ -135,6 +141,53 @@ export function SearchPage({ catalog }: SearchPageProps) {
     });
   };
 
+  const queueConnectedSourceSearch = useCallback((submittedQuery: string) => {
+    const normalizedQuery = submittedQuery.trim();
+    if (normalizedQuery.length < 2) return;
+
+    lastAutoFallbackQuery.current = normalizedQuery;
+
+    setFederatedSearchRequest((current) => ({
+      id: (current?.id ?? 0) + 1,
+      query: normalizedQuery,
+    }));
+  }, []);
+
+  const searchConnectedSources = () => {
+    queueConnectedSourceSearch(query.trim());
+  };
+
+  const gtrMatchedCount = currentGtrSearch.status === "success"
+    ? currentGtrSearch.data.matchedCount
+    : null;
+
+  useEffect(() => {
+    const submittedQuery = deferredQuery.trim();
+    const gtrResolvedWithoutMatch = currentGtrSearch.status === "error"
+      || (currentGtrSearch.status === "success" && gtrMatchedCount === 0);
+
+    if (
+      !autoFallbackEnabled
+      || submittedQuery.length < 2
+      || submittedQuery !== currentTestingQuery
+      || results.length > 0
+      || !gtrResolvedWithoutMatch
+      || lastAutoFallbackQuery.current === submittedQuery
+    ) {
+      return;
+    }
+
+    queueConnectedSourceSearch(submittedQuery);
+  }, [
+    autoFallbackEnabled,
+    currentGtrSearch.status,
+    currentTestingQuery,
+    deferredQuery,
+    gtrMatchedCount,
+    queueConnectedSourceSearch,
+    results.length,
+  ]);
+
   return (
     <AssayIndexShell
       title="Search and discovery"
@@ -142,40 +195,55 @@ export function SearchPage({ catalog }: SearchPageProps) {
     >
       <section className="assayindex-panel assayindex-search-deck p-5 md:p-6">
         <div className="assayindex-search-controls grid gap-4 lg:grid-cols-[minmax(0,1.6fr)_repeat(3,minmax(0,1fr))]">
-          <input
-            aria-activedescendant={visibleResults[boundedActiveIndex] ? `assayindex-result-${boundedActiveIndex}` : undefined}
-            aria-autocomplete="list"
-            aria-controls="assayindex-search-results"
-            aria-expanded={visibleResults.length > 0}
-            aria-label="Search AssayIndex"
-            className="assayindex-focus-ring rounded-2xl border border-[#cad7de] px-4 py-3 text-sm text-[#153042]"
-            placeholder="Search assays, source tests, codes, labs, or methods"
-            type="search"
-            value={query}
-            onChange={(event) => {
-              updateSearchParams({ q: event.target.value });
-              pushRecentSearch(event.target.value);
-            }}
-            onKeyDown={(event) => {
-              if (event.key === "ArrowDown") {
-                event.preventDefault();
-                setActiveIndex((index) => Math.min(index + 1, Math.max(visibleResults.length - 1, 0)));
-              }
+          <div className="grid gap-2 sm:grid-cols-[minmax(0,1fr)_auto]">
+            <input
+              aria-activedescendant={visibleResults[boundedActiveIndex] ? `assayindex-result-${boundedActiveIndex}` : undefined}
+              aria-autocomplete="list"
+              aria-controls="assayindex-search-results"
+              aria-expanded={visibleResults.length > 0}
+              aria-label="Search AssayIndex"
+              className="assayindex-focus-ring min-w-0 rounded-2xl border border-[#cad7de] px-4 py-3 text-sm text-[#153042]"
+              placeholder="Search assays, source tests, codes, labs, or methods"
+              type="search"
+              value={query}
+              onChange={(event) => {
+                updateSearchParams({ q: event.target.value });
+                pushRecentSearch(event.target.value);
+              }}
+              onKeyDown={(event) => {
+                if (event.key === "ArrowDown") {
+                  event.preventDefault();
+                  setActiveIndex((index) => Math.min(index + 1, Math.max(visibleResults.length - 1, 0)));
+                }
 
-              if (event.key === "ArrowUp") {
-                event.preventDefault();
-                setActiveIndex((index) =>
-                  Math.max(Math.min(index, Math.max(visibleResults.length - 1, 0)) - 1, 0),
-                );
-              }
+                if (event.key === "ArrowUp") {
+                  event.preventDefault();
+                  setActiveIndex((index) =>
+                    Math.max(Math.min(index, Math.max(visibleResults.length - 1, 0)) - 1, 0),
+                  );
+                }
 
-              if (event.key === "Enter" && visibleResults[boundedActiveIndex]) {
-                event.preventDefault();
-                router.push(visibleResults[boundedActiveIndex].document.href);
-              }
-            }}
-            role="combobox"
-          />
+                if (event.key === "Enter") {
+                  event.preventDefault();
+                  const selectedResult = visibleResults[boundedActiveIndex];
+                  if (selectedResult) {
+                    router.push(selectedResult.document.href);
+                  } else {
+                    searchConnectedSources();
+                  }
+                }
+              }}
+              role="combobox"
+            />
+            <button
+              className="assayindex-action assayindex-action--primary assayindex-focus-ring whitespace-nowrap"
+              disabled={query.trim().length < 2}
+              type="button"
+              onClick={searchConnectedSources}
+            >
+              Search all sources
+            </button>
+          </div>
           <select
             aria-label="Filter by laboratory"
             className="assayindex-focus-ring rounded-2xl border border-[#cad7de] px-4 py-3 text-sm text-[#153042]"
@@ -468,13 +536,19 @@ export function SearchPage({ catalog }: SearchPageProps) {
         </section>
       ) : null}
 
-      <FederatedSourceSearch query={query} />
+      <FederatedSourceSearch
+        autoFallbackEnabled={autoFallbackEnabled}
+        onSearchRequest={queueConnectedSourceSearch}
+        query={query}
+        searchRequest={federatedSearchRequest}
+      />
 
       {results.length === 0 && currentGtrSearch.status === "success" && currentGtrSearch.data.matchedCount === 0 ? (
         <section className="assayindex-panel p-8 text-center">
-          <h2 className="text-2xl font-semibold text-[#102435]">No search results</h2>
+          <h2 className="text-2xl font-semibold text-[#102435]">No verified catalog or GTR matches</h2>
           <p className="mt-3 text-sm leading-7 text-[#566c7a]">
-            Try removing one or more filters, or search with a direct code such as 81256, 81241, or 55135-8.
+            Current laboratory directory candidates may appear above. You can also remove filters or search with a
+            direct code such as 81256, 81241, or 55135-8.
           </p>
         </section>
       ) : null}

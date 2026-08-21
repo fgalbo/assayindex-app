@@ -257,7 +257,10 @@ export function buildSearchDocuments(catalog: AssayIndexCatalog): AssaySearchDoc
       summary: report.assay.summary,
       purpose: report.assay.purpose,
       specialty: report.assay.specialty,
-      synonyms: report.assay.synonyms,
+      synonyms: dedupe([
+        ...report.assay.synonyms,
+        ...report.labRecords.flatMap((record) => record.synonyms),
+      ]),
       keywords: report.assay.keywords,
       labIds: dedupe(report.labRecords.map((record) => record.labId)),
       labNames: dedupe(labs.map((lab) => lab.displayName)),

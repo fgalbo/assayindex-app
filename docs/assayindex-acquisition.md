@@ -135,7 +135,7 @@ The validated batch is now projected into 250 public source offerings with exact
 
 ### Federated reference-laboratory status
 
-The Search page uses one explicit-submit federated boundary. It never contacts a laboratory while a user is typing, never accepts a client-supplied source URL, and never writes a live result into the published catalog.
+The Search page uses one server-side federated boundary. By default it contacts a source adapter only after an explicit directory-search action. In testing deployments, `ASSAYINDEX_AUTO_EXTERNAL_FALLBACK_ENABLED=true` instead submits a query when the local catalog has no match and validated GTR either returns no match or is unavailable. The UI discloses this behavior before a fallback can run. Neither mode accepts a client-supplied source URL or writes a live result into the published catalog.
 
 - **ARUP:** the evaluation adapter performs bounded server-side search and detail retrieval, validates canonical ARUP URLs, and returns source-linked, unverified candidates without persistence. ARUP's current online policy limits non-personal electronic reproduction without prior written consent, so this remains an explicitly labeled testing connection rather than a durable publication feed.
 - **Mayo Clinic Laboratories:** the connector is `official-directory-only`. Mayo's robots policy excludes catalog search/print/setup paths and its terms restrict unapproved automated access, so AssayIndex provides a direct handoff instead of making a server request.
@@ -150,7 +150,7 @@ These handoffs are complete connections for testing: every provider has a usable
 | NIH GTR | First bulk discovery source for genetic and microbial tests | Latest-test and condition/gene download, staging, private review, and separately labeled testing search implemented |
 | CDC Infectious Diseases Test Directory | Public-health catalog for rare CDC reference testing | XML download, deterministic staging, complete-batch source-offering promotion, downloads, and weekly release-artifact generation implemented |
 | LOINC | Licensed terminology enrichment, not a laboratory catalog | Official record links implemented; authenticated versioned enrichment feed pending credentials |
-| ARUP | Reference-lab directory and per-test interface maps | Explicit-submit evaluation search/detail adapter implemented; no persistence or automatic publication |
+| ARUP | Reference-lab directory and per-test interface maps | Evaluation search/detail adapter implemented with explicit submit and opt-in unmatched-query fallback; no persistence or automatic publication |
 | Mayo Clinic Laboratories | Full catalog PDF and test pages | `official-directory-only` handoff implemented; automated catalog paths not requested |
 | Quest Diagnostics | Test directory | `official-directory-only` handoff implemented; documented API and service-area contract unavailable |
 | Labcorp | Test directory | `official-directory-only` handoff implemented; automated collection not requested |

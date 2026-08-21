@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 import {
   LABORATORY_SOURCE_IDS,
@@ -35,6 +35,11 @@ type DetailState =
   | { status: "loading"; parsed: null }
   | { status: "success"; parsed: ParsedSourceOffering }
   | { status: "error"; parsed: null };
+
+export type FederatedSourceSearchRequest = {
+  id: number;
+  query: string;
+};
 
 function DetailSummary({ parsed }: { parsed: ParsedSourceOffering }) {
   const specimen = parsed.specimenOptions[0];
@@ -139,16 +144,26 @@ function SourceCandidateCard({
   );
 }
 
-export function FederatedSourceSearch({ query }: { query: string }) {
+export function FederatedSourceSearch({
+  autoFallbackEnabled = false,
+  onSearchRequest,
+  query,
+  searchRequest = null,
+}: {
+  autoFallbackEnabled?: boolean;
+  onSearchRequest: (query: string) => void;
+  query: string;
+  searchRequest?: FederatedSourceSearchRequest | null;
+}) {
   const [state, setState] = useState<SearchState>({ status: "idle", data: null, submittedQuery: null });
   const [details, setDetails] = useState<Record<string, DetailState>>({});
   const searchController = useRef<AbortController | null>(null);
+  const lastHandledRequestId = useRef<number | null>(null);
   const normalizedQuery = query.trim();
   const isCurrentSubmission = state.submittedQuery === normalizedQuery;
   const isCurrentLoading = isCurrentSubmission && state.status === "loading";
 
-  const runSearch = async () => {
-    const submittedQuery = query.trim();
+  const runSearch = useCallback(async (submittedQuery: string) => {
     if (submittedQuery.length < 2) return;
     searchController.current?.abort();
     const controller = new AbortController();
@@ -170,7 +185,15 @@ export function FederatedSourceSearch({ query }: { query: string }) {
     } catch {
       if (!controller.signal.aborted) setState({ status: "error", data: null, submittedQuery });
     }
-  };
+  }, []);
+
+  useEffect(() => {
+    if (!searchRequest || lastHandledRequestId.current === searchRequest.id) return;
+    lastHandledRequestId.current = searchRequest.id;
+    void runSearch(searchRequest.query.trim());
+  }, [runSearch, searchRequest]);
+
+  useEffect(() => () => searchController.current?.abort(), []);
 
   const loadDetails = async (candidate: SourceSearchReference) => {
     setDetails((current) => ({ ...current, [candidate.sourceRef]: { status: "loading", parsed: null } }));
@@ -207,8 +230,9 @@ export function FederatedSourceSearch({ query }: { query: string }) {
             Live Source Candidates
           </h2>
           <p className="mt-2 max-w-4xl text-sm leading-7 text-[#526978]">
-            Published AssayIndex records stay first. This explicit action checks enabled official directory adapters;
-            typing alone never contacts a laboratory.
+            Published AssayIndex records stay first. {autoFallbackEnabled
+              ? "In testing mode, a search with no local match checks enabled official directory adapters after GTR returns no match or is unavailable. This sends the search term to those enabled sources."
+              : "A search runs only after you choose an explicit directory-search action; typing alone does not contact a laboratory."}
           </p>
           <p className="mt-1 text-xs leading-5 text-[#5e7584]">ARUP · Mayo · Quest · Labcorp</p>
         </div>
@@ -216,7 +240,7 @@ export function FederatedSourceSearch({ query }: { query: string }) {
           className="assayindex-action assayindex-action--primary assayindex-focus-ring"
           disabled={normalizedQuery.length < 2 || isCurrentLoading}
           type="button"
-          onClick={() => void runSearch()}
+          onClick={() => onSearchRequest(normalizedQuery)}
         >
           {isCurrentLoading ? "Searching current directories…" : "Search current laboratory directories"}
         </button>
