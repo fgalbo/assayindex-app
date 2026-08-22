@@ -131,6 +131,28 @@ The 2026-08-12 adapter probe used the directory generated 2026-08-03 and last mo
 
 The validated batch is now projected into 250 public source offerings with exact source/provider identities and provenance. It is not force-mapped to normalized assay concepts, and all 201 attention-flagged records remain searchable.
 
+## Common laboratory order terminology
+
+The Search page also uses a bundled terminology snapshot built from the [NLM Common Lab Orders value set](https://lhncbc.nlm.nih.gov/CHRB/Projects/top-LOINC-codes.html). This is a terminology/search layer, not a reference-laboratory catalog and not evidence that a laboratory currently offers an equivalent orderable test.
+
+The checked-in snapshot contains all 1,523 rows in the source CSV and keeps each official LOINC identifier, long common name, and order/observation designation together. It also contains 28 explicitly selected LOINC concepts for high-value mnemonics that are absent from the common-order value set, including INR, MCV, ANC, MPV, anion gap, UACR, blood-gas panels, high-sensitivity troponins, SARS-CoV-2, non-HDL cholesterol, and blood crossmatch. These supplemental codes live in a small versioned source file; the updater rejects duplicates or overlap with the common-order source and requires the NLM API to return every selected code before publishing.
+
+The updater enriches the fixed 1,551-code set through the [NLM Clinical Tables LOINC API](https://clinicaltables.nlm.nih.gov/apidoc/loinc/v3/doc.html), requests exclusion of externally copyrighted content, and preserves LOINC long names, short names, consumer names when supplied, and related search terms. The current response supplies no consumer names for the 1,523 common-order rows, so those values remain `null` rather than inferred. Supplemental entries are labeled separately and keep `orderObservation: null`; AssayIndex does not invent a source classification the API did not provide. A 90% common-source retention gate, 100% supplement-retention gate, source/supplement overlap gate, streaming response bounds, exact source and supplement-code-set SHA-256 values, ordered enrichment-response SHA-256 and batch count, record-count reconciliation, schema validation, and the required [LOINC attribution](https://loinc.org/license) protect the public snapshot. The public NLM API does not identify the underlying LOINC release version, so the snapshot records that version as unavailable rather than inferring it.
+
+```powershell
+# Validate a live refresh without changing the checked-in snapshot
+npm run update:assayindex-common-orders -- --allow-network
+
+# Write the fully validated snapshot
+npm run update:assayindex-common-orders -- --allow-network --write
+```
+
+Runtime searches are local: a visitor's query is sent only to the AssayIndex route and is never forwarded to NLM. Update-time NLM requests contain fixed LOINC codes from the downloaded value set and reviewed supplement, not visitor input or patient data.
+
+Source-provided `RELATEDNAMES2` values are retained as word-level search aids, never promoted to whole-test aliases or evidence of clinical equivalence. Common mnemonics are resolved through a versioned audited heuristic registry whose entries select explicit LOINC concept allowlists from this snapshot. The registry now covers routine panel, hematology, chemistry, renal, liver, lipid, thyroid, coagulation, cardiac, endocrine, infectious-disease, immunology, urine, and blood-bank shorthand. That prevents source-term collisions such as `T3` → tree IgE, `ANA` → Epstein-Barr nuclear antibody, `HBsAg` → anti-HBs, `BNP` → NT-proBNP, or `RPR` → VDRL. Ambiguous mnemonics such as `Cr`, `TG`, and `PCT` show their reviewed candidate families instead of silently choosing one. Collision-prone `H&H` and `T&S` require punctuation or descriptive words; bare `HH` and `TS` are not expanded. Every interpretation is disclosed as an AssayIndex search heuristic, links to evidence for the target terminology or documented usage, and fails loudly if one of its reviewed concepts disappears from a refreshed snapshot. Family queries such as `hCG`, `HIV`, and `HCV` keep modality/specimen variants visibly separate; method-only terms such as `PCR` and `NAAT` remain broad terminology searches and should be qualified with an analyte or organism. Short and digit-bearing code-like strings use exact source-field matching; broad substring or fuzzy matching is deliberately disabled for them to prevent collisions such as `PT` → `PTEN` and `TP53` → `TP53A`.
+
+This Common Lab Orders value set is useful broad coverage, but it is not the complete authenticated LOINC release. Full-release ingestion remains a separate task requiring LOINC credentials, release-version provenance, license review, and the official Download API.
+
 ## Source roadmap
 
 ### Federated reference-laboratory status
@@ -141,7 +163,7 @@ The Search page uses one server-side federated boundary. By default it contacts 
 - **Mayo Clinic Laboratories:** the connector is `official-directory-only`. Mayo's robots policy excludes catalog search/print/setup paths and its terms restrict unapproved automated access, so AssayIndex provides a direct handoff instead of making a server request.
 - **Quest Diagnostics:** the connector is `official-directory-only`. No documented public test-directory API or universal service-area contract was identified, so AssayIndex provides a direct handoff and does not call the directory application's internal services.
 - **Labcorp:** the connector is `official-directory-only`. The current user agreement expressly prohibits automated collection without written permission, so AssayIndex provides a direct handoff to the official Test Finder.
-- **LOINC:** LOINC is terminology, not a reference laboratory. Valid codes link to their official LOINC records. Authenticated Search/Download API ingestion remains a separate enrichment task and requires server-side account credentials, release-version provenance, and LOINC attribution.
+- **LOINC:** LOINC is terminology, not a reference laboratory. The bundle supplies all 1,523 NLM Common Lab Orders concepts plus 28 separately labeled, NLM-verified mnemonic supplements, with official record links and attribution. Complete authenticated-release ingestion remains a separate enrichment task requiring server-side account credentials and release-version provenance.
 
 These handoffs are complete connections for testing: every provider has a usable official path. A server-side adapter additionally requires explicit evaluation authorization and its source-policy gate; testing responses remain nonpersistent and are never promoted automatically. Turning an environment flag on cannot bypass that gate.
 
@@ -149,7 +171,7 @@ These handoffs are complete connections for testing: every provider has a usable
 | --- | --- | --- |
 | NIH GTR | First bulk discovery source for genetic and microbial tests | Latest-test and condition/gene download, staging, private review, and separately labeled testing search implemented |
 | CDC Infectious Diseases Test Directory | Public-health catalog for rare CDC reference testing | XML download, deterministic staging, complete-batch source-offering promotion, downloads, and weekly release-artifact generation implemented |
-| LOINC | Licensed terminology enrichment, not a laboratory catalog | Official record links implemented; authenticated versioned enrichment feed pending credentials |
+| LOINC | Licensed terminology enrichment, not a laboratory catalog | Complete 1,523-row NLM Common Lab Orders snapshot, 28-code audited mnemonic supplement, related-name search, evidence-linked interpretations, and official record links implemented; complete authenticated release pending credentials |
 | ARUP | Reference-lab directory and per-test interface maps | Evaluation search/detail adapter implemented with explicit submit and opt-in unmatched-query fallback; no persistence or automatic publication |
 | Mayo Clinic Laboratories | Full catalog PDF and test pages | `official-directory-only` handoff implemented; automated catalog paths not requested |
 | Quest Diagnostics | Test directory | `official-directory-only` handoff implemented; documented API and service-area contract unavailable |

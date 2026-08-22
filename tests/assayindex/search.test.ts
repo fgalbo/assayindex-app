@@ -45,6 +45,50 @@ describe("assay search", () => {
     ).toEqual([]);
   });
 
+  it.each(["CBC", "PT", "UA"])(
+    "does not present substring or fuzzy collisions for the short mnemonic %s",
+    (query) => {
+      expect(searchAllCatalog(publishedCatalog, query, {}, "relevance")).toEqual([]);
+    },
+  );
+
+  it("matches short clinical mnemonics only at normalized token boundaries", () => {
+    const nextCatalog = structuredClone(publishedCatalog);
+    const cases = [
+      { query: "CBC", synonym: "CBC with differential", assaySlug: nextCatalog.assays[0].slug },
+      { query: "PT", synonym: "PT/INR", assaySlug: nextCatalog.assays[1].slug },
+      { query: "UA", synonym: "UA with microscopy", assaySlug: nextCatalog.assays[2].slug },
+      { query: "A1C", synonym: "Hemoglobin A1C", assaySlug: nextCatalog.assays[3].slug },
+      { query: "CTNG", synonym: "CT/NG confirmation", assaySlug: nextCatalog.assays[4].slug },
+      { query: "GCCT", synonym: "GC/CT confirmation", assaySlug: nextCatalog.assays[5].slug },
+      { query: "PTINR", synonym: "PT/INR", assaySlug: nextCatalog.assays[1].slug },
+    ];
+
+    for (const testCase of cases) {
+      const record = nextCatalog.assayLabRecords.find(
+        (candidate) => candidate.assaySlug === testCase.assaySlug,
+      );
+      expect(record).toBeDefined();
+      record!.synonyms.push(testCase.synonym);
+    }
+
+    for (const testCase of cases) {
+      const results = searchAllCatalog(nextCatalog, testCase.query, {}, "relevance");
+      expect(
+        results.map((result) => ({ assaySlug: result.document.assaySlug, score: result.score })),
+        testCase.query,
+      ).toEqual([{ assaySlug: testCase.assaySlug, score: 0 }]);
+    }
+  });
+
+  it("preserves fuzzy matching for longer natural-language queries", () => {
+    const results = searchAllCatalog(publishedCatalog, "Hemochromatoses", {}, "relevance");
+
+    expect(results.map((result) => result.document.assaySlug)).toContain(
+      "hereditary-hemochromatosis-hfe",
+    );
+  });
+
   it("does not return the same catalog for an unrelated query", () => {
     expect(searchAllCatalog(publishedCatalog, "zzzxqv-no-such-test", {}, "relevance")).toEqual([]);
   });

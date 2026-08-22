@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1",
+  "sourceId": "assayindex-curated-loinc-mnemonic-supplement-v1",
+  "selectionVersion": "1.0.0",
+  "concepts": [
+    { "id": "hematocrit", "loincCodes": ["4544-3"] },
+    { "id": "mcv", "loincCodes": ["787-2"] },
+    { "id": "mch", "loincCodes": ["785-6"] },
+    { "id": "mchc", "loincCodes": ["786-4"] },
+    { "id": "rdw", "loincCodes": ["788-0", "21000-5"] },
+    { "id": "mpv", "loincCodes": ["28542-9", "32623-1"] },
+    { "id": "anc", "loincCodes": ["751-8", "26499-4"] },
+    { "id": "anion-gap", "loincCodes": ["33037-3", "10466-1", "1863-0", "41276-7", "73582-9"] },
+    { "id": "non-hdl-cholesterol", "loincCodes": ["43396-1"] },
+    { "id": "uacr", "loincCodes": ["9318-7"] },
+    { "id": "abg", "loincCodes": ["24336-0"] },
+    { "id": "vbg", "loincCodes": ["24339-4"] },
+    { "id": "procalcitonin", "loincCodes": ["33959-8"] },
+    { "id": "plateletcrit", "loincCodes": ["51637-7"] },
+    { "id": "inr", "loincCodes": ["6301-6"] },
+    { "id": "high-sensitivity-troponin-i", "loincCodes": ["89579-7"] },
+    { "id": "high-sensitivity-troponin-t", "loincCodes": ["67151-1"] },
+    { "id": "sars-cov-2", "loincCodes": ["94500-6", "94531-1"] },
+    { "id": "upep", "loincCodes": ["34539-7"] },
+    { "id": "blood-crossmatch", "loincCodes": ["34531-4"] }
+  ]
+}

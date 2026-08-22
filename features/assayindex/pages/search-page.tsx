@@ -12,6 +12,7 @@ import { pushRecentSearch } from "@/features/assayindex/storage/saved-state";
 import type { GtrTestingSearchResponse } from "@/features/assayindex/testing/types";
 
 import { AssayIndexShell } from "@/features/assayindex/components/assayindex-shell";
+import { CommonOrderSearch } from "@/features/assayindex/components/common-order-search";
 import {
   FederatedSourceSearch,
   type FederatedSourceSearchRequest,
@@ -453,6 +454,8 @@ export function SearchPage({ autoFallbackEnabled = false, catalog }: SearchPageP
           </div>
         </section>
       ) : null}
+
+      <CommonOrderSearch query={query} onSearchLabs={queueConnectedSourceSearch} />
 
       {deferredQuery.trim().length >= 2 ? (
         <section aria-labelledby="gtr-testing-results-heading" className="assayindex-panel assayindex-section-band assayindex-section-band--testing p-5 md:p-6">

@@ -111,6 +111,65 @@ describe("validated GTR testing search", () => {
     }
   });
 
+  it("matches clinical codes exactly instead of as prefixes", async () => {
+    const cases = [
+      { query: "CBC", exact: "CBC complete blood count", collision: "CBCL1 gene analysis" },
+      { query: "CMP", exact: "CMP comprehensive metabolic panel", collision: "CMPK1 gene analysis" },
+      { query: "BMP", exact: "BMP basic metabolic panel", collision: "BMP2 gene analysis" },
+      { query: "A1C", exact: "A1C hemoglobin measurement", collision: "A1C2 synthetic collision" },
+      { query: "TSH", exact: "TSH thyroid stimulating hormone", collision: "TSHR gene analysis" },
+      { query: "PSA", exact: "PSA prostate specific antigen", collision: "PSAP gene analysis" },
+      { query: "PT", exact: "PT prothrombin time", collision: "PTEN gene analysis" },
+      { query: "INR", exact: "INR international normalized ratio", collision: "INR1 synthetic collision" },
+      { query: "UA", exact: "UA urinalysis", collision: "UAP1 gene analysis" },
+      { query: "UDS", exact: "UDS urine drug screen", collision: "UDS1 synthetic collision" },
+      { query: "PCR", exact: "PCR molecular method", collision: "PCR1 synthetic collision" },
+      { query: "CTNG", exact: "CTNG combined infection test", collision: "CTNNG synthetic collision" },
+      { query: "GCCT", exact: "GCCT combined infection test", collision: "GCCTA synthetic collision" },
+      { query: "BRCA1", exact: "BRCA1 hereditary cancer test", collision: "BRCA12 synthetic collision" },
+      { query: "MTHFR", exact: "MTHFR thrombophilia test", collision: "MTHFRP synthetic collision" },
+      { query: "EPCAM", exact: "EPCAM hereditary cancer test", collision: "EPCAMX synthetic collision" },
+      { query: "HBsAg", exact: "HBsAg hepatitis B antigen test", collision: "HBsAgX synthetic collision" },
+    ];
+
+    cases.forEach((testCase, index) => {
+      addRecord({
+        id: `GTR000001${String(index * 2).padStart(3, "0")}.1`,
+        testName: `${testCase.query} exact mnemonic test`,
+        searchText: testCase.exact,
+      });
+      addRecord({
+        id: `GTR000001${String(index * 2 + 1).padStart(3, "0")}.1`,
+        testName: `${testCase.query} prefix collision test`,
+        searchText: testCase.collision,
+      });
+    });
+    database.prepare("UPDATE metadata SET value = ? WHERE key = 'candidateCount'").run(
+      2 + cases.length * 2,
+    );
+
+    for (const testCase of cases) {
+      expect(normalizeGtrTestingQuery(testCase.query).match, testCase.query).toBe(
+        `"${testCase.query.toLowerCase()}"`,
+      );
+      const response = await searchGtrTestingIndex({ query: testCase.query, database });
+      expect(response.results.map((result) => result.testName), testCase.query).toContain(
+        `${testCase.query} exact mnemonic test`,
+      );
+      expect(response.results.map((result) => result.testName), testCase.query).not.toContain(
+        `${testCase.query} prefix collision test`,
+      );
+    }
+  });
+
+  it("preserves prefix matching for longer natural-language tokens", async () => {
+    expect(normalizeGtrTestingQuery("Sequen").match).toBe('"sequen"*');
+    const response = await searchGtrTestingIndex({ query: "Sequen", database });
+    expect(response.results.map((result) => result.testName)).toContain(
+      "TP53 hereditary cancer test",
+    );
+  });
+
   it("returns only the allowlisted staged result shape with source disclosure", async () => {
     const response = await searchGtrTestingIndex({ query: "TP53", database });
     expect(Object.keys(response.results[0] ?? {}).toSorted()).toEqual([
@@ -128,7 +187,7 @@ describe("validated GTR testing search", () => {
     expect(() => normalizeGtrTestingQuery("a b c d e f g h i j k")).toThrow(/1-10/);
     expect(() => normalizeGtrTestingLimit(51)).toThrow(/1 through 50/);
     const normalized = normalizeGtrTestingQuery('TP53" OR 1=1 --');
-    expect(normalized.match).toBe('"tp53"* AND "or"* AND "1"*');
+    expect(normalized.match).toBe('"tp53" AND "or" AND "1"');
     await expect(searchGtrTestingIndex({ query: 'TP53" OR 1=1 --', database })).resolves.toMatchObject({
       matchedCount: 0,
     });

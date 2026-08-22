@@ -7,6 +7,7 @@ import type {
   SearchFilters,
   SearchSort,
 } from "@/features/assayindex/domain/types";
+import { isClinicalCodeLikeQuery } from "@/features/assayindex/search/query-shape";
 import { buildSearchDocuments } from "@/features/assayindex/selectors/catalog";
 import {
   getPublishedSourceOfferings,
@@ -76,6 +77,24 @@ function normalizeExactSearchText(value: string) {
     .trim();
 }
 
+function includesWholeSearchPhrase(value: string, normalizedQuery: string) {
+  const normalizedValue = normalizeExactSearchText(value);
+  if (` ${normalizedValue} `.includes(` ${normalizedQuery} `)) return true;
+
+  const compactQuery = normalizedQuery.replace(/\s+/g, "");
+  if (compactQuery.length < 4) return false;
+  const valueTokens = normalizedValue.split(" ").filter(Boolean);
+  for (let start = 0; start < valueTokens.length; start += 1) {
+    let candidate = "";
+    for (let end = start; end < valueTokens.length; end += 1) {
+      candidate += valueTokens[end];
+      if (candidate === compactQuery) return true;
+      if (candidate.length >= compactQuery.length) break;
+    }
+  }
+  return false;
+}
+
 function getSearchableValues(
   document: AssaySearchDocument | AllCatalogSearchDocument,
 ) {
@@ -104,10 +123,13 @@ function searchRelevantDocuments<
   query: string,
 ): Array<{ document: T; score: number }> {
   const normalizedQuery = normalizeExactSearchText(query);
+  const requiresWholePhrase = isClinicalCodeLikeQuery(query);
   const exactDocuments = normalizedQuery
     ? documents.filter((document) =>
         getSearchableValues(document).some((value) =>
-          normalizeExactSearchText(value).includes(normalizedQuery),
+          requiresWholePhrase
+            ? includesWholeSearchPhrase(value, normalizedQuery)
+            : normalizeExactSearchText(value).includes(normalizedQuery),
         ),
       )
     : [];
@@ -115,7 +137,7 @@ function searchRelevantDocuments<
 
   return [
     ...exactDocuments.map((document) => ({ document, score: 0 })),
-    ...mapRelevantFuseResults(fuseResults).filter(
+    ...mapRelevantFuseResults(requiresWholePhrase ? [] : fuseResults).filter(
       (result) => !exactDocumentSet.has(result.document),
     ),
   ];
@@ -367,7 +389,9 @@ export function searchCatalog(
   const initialResults: AssaySearchResult[] = normalizedQuery
     ? searchRelevantDocuments(
         getDocuments(catalog),
-        getFuse(catalog).search(normalizedQuery),
+        isClinicalCodeLikeQuery(normalizedQuery)
+          ? []
+          : getFuse(catalog).search(normalizedQuery),
         normalizedQuery,
       )
     : getDocuments(catalog).map((document) => ({
@@ -390,7 +414,9 @@ export function searchAllCatalog(
   const initialResults: AllCatalogSearchResult[] = normalizedQuery
     ? searchRelevantDocuments(
         searchEntry.documents,
-        getAllCatalogFuse(catalog).search(normalizedQuery),
+        isClinicalCodeLikeQuery(normalizedQuery)
+          ? []
+          : getAllCatalogFuse(catalog).search(normalizedQuery),
         normalizedQuery,
       )
     : searchEntry.documents.map((document) => ({

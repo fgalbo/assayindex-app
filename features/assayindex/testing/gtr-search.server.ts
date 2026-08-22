@@ -10,6 +10,7 @@ import { createGunzip } from "node:zlib";
 
 import { get } from "@vercel/blob";
 
+import { isClinicalCodeLikeQuery } from "@/features/assayindex/search/query-shape";
 import type {
   GtrTestingSearchRecord,
   GtrTestingSearchResponse,
@@ -328,13 +329,25 @@ export function normalizeGtrTestingQuery(query: unknown) {
   if (trimmed.length < 2 || trimmed.length > MAX_QUERY_LENGTH) {
     throw new Error(`Search query must contain 2-${MAX_QUERY_LENGTH} characters.`);
   }
-  const tokens = trimmed.match(/[\p{L}\p{N}]+/gu)?.map((token) => token.toLocaleLowerCase("en-US")) ?? [];
+  const tokens = trimmed.match(/[\p{L}\p{N}]+/gu) ?? [];
   if (tokens.length === 0 || tokens.length > MAX_QUERY_TOKENS) {
     throw new Error(`Search query must contain 1-${MAX_QUERY_TOKENS} searchable terms.`);
   }
+  const uniqueTokens = new Map<string, boolean>();
+  for (const token of tokens) {
+    const normalizedToken = token.toLocaleLowerCase("en-US");
+    uniqueTokens.set(
+      normalizedToken,
+      (uniqueTokens.get(normalizedToken) ?? false) || isClinicalCodeLikeQuery(token),
+    );
+  }
   return {
     query: trimmed,
-    match: [...new Set(tokens)].map((token) => `"${token.replaceAll('"', '""')}"*`).join(" AND "),
+    match: [...uniqueTokens]
+      .map(([token, exact]) => {
+        return `"${token.replaceAll('"', '""')}"${exact ? "" : "*"}`;
+      })
+      .join(" AND "),
   };
 }
 

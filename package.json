@@ -28,7 +28,8 @@
     "update:assayindex-sources": "node ./scripts/update-assayindex-sources.mjs",
     "review:assayindex": "node ./scripts/review-assayindex-candidates.mjs",
     "generate:assayindex-gtr-search": "node ./scripts/generate-assayindex-gtr-search.mjs",
-    "publish:assayindex-gtr-search": "node ./scripts/publish-assayindex-gtr-search-blob.mjs"
+    "publish:assayindex-gtr-search": "node ./scripts/publish-assayindex-gtr-search-blob.mjs",
+    "update:assayindex-common-orders": "node ./scripts/update-assayindex-common-orders.mjs"
   },
   "dependencies": {
     "@vercel/blob": "^2.3.3",
