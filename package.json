@@ -57,6 +57,7 @@
     "vitest": "^4.1.10"
   },
   "overrides": {
-    "undici": "6.29.1"
+    "undici": "6.29.1",
+    "source-map-js": "1.2.2"
   }
 }
