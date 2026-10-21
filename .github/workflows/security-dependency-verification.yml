@@ -18,7 +18,8 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
-          node-version: 24
+          node-version: '^24.22.1'
+          check-latest: true
       - name: Resolve reviewed security updates without lifecycle scripts
         run: |
           cp package-lock.json /tmp/security-base-lock.json
@@ -27,7 +28,7 @@ jobs:
           const p = JSON.parse(fs.readFileSync('package.json', 'utf8'));
           p.dependencies.next = '16.4.1';
           p.devDependencies['eslint-config-next'] = '16.4.1';
-          p.overrides = { ...p.overrides, undici: '6.29.1' };
+          p.overrides = { ...p.overrides, undici: '6.29.1', 'source-map-js': '1.2.2' };
           fs.writeFileSync('package.json', JSON.stringify(p, null, 2) + '\n');
           NODE
           npm install --package-lock-only --ignore-scripts --no-fund --no-audit
