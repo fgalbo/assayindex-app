@@ -45,6 +45,14 @@ jobs:
           NODE
       - name: Install resolved dependencies
         run: npm ci --no-fund --no-audit
+      - name: Report production dependency audit
+        run: |
+          npm audit --omit=dev --json > /tmp/security-audit.json || audit_status=$?
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          console.log('SECURITY_AUDIT=' + fs.readFileSync('/tmp/security-audit.json', 'utf8').trim());
+          NODE
+          test "${audit_status:-0}" -le 1
       - name: Run unit and acquisition tests
         run: |
           npm run test:assayindex-acquisition
