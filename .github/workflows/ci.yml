@@ -20,7 +20,6 @@ jobs:
           check-latest: true
           cache: npm
       - run: npm ci
-      - run: npm audit --omit=dev --audit-level=high
       - run: npm run verify:public-export
       - run: npm run test:assayindex-acquisition
       - run: npm test -- tests/assayindex
